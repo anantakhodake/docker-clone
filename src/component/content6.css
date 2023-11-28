@@ -1,0 +1,29 @@
+.container6 h4 {
+    background: linear-gradient(90deg,#00084d 0,#1d63ed 100%);
+    background-clip: border-box;
+    font-size: 24px;
+    background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.container6 h1{
+  font-weight: 700;
+  font-size: 56px;
+  color: #000000 !important;
+  line-height: 1.2em;
+  margin: auto;
+  letter-spacing: -0.5px;
+  font-family:"Poppins",sans-serif;
+}
+.container6 p{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    color: #0b214a;
+    line-height: 1.5em;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.container6{
+    margin-top: 70px;
+}

@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+.container .img{
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: transparent;
+}

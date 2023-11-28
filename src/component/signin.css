@@ -1,0 +1,77 @@
+.signin_container{
+    width: 500px;
+    border: 2px solid #c9cace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.signin_container1{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.signin_container2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.signin_container2 .sinput{
+    border: 2px solid blue;
+    width: 350px;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    border-radius:3px;
+    height: 60px;
+}
+.signin_container2 .sbtn1{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width:350px;
+  padding: 10px;
+  border: none;
+  background-color: blue;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  height: 60px;
+  font-size: 18px;
+}
+ .signin_container2 .hr{
+    display:flex;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.signin_container2 .sbtn1:hover{
+    outline: 4px solid #c0e0fa !important;
+    cursor: pointer;
+    background-color: darkblue;
+}
+.signin_container2 .sbtn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:350px;
+    height: 60px;
+    border-radius: 3px;
+    padding: 10px;
+    border:2px solid #c9cace;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.signin_container2 .sbtn2:hover{
+    cursor: pointer;
+    background-color:#c9cace ;
+}
+

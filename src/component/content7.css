@@ -1,0 +1,11 @@
+.show-build{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.build-container{
+    display: flex;
+}
+.show-build is-visible{
+    display: flex;
+}

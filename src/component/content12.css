@@ -1,0 +1,29 @@
+.container12second{
+    display: flex;
+
+}
+.container12main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.sub_container12second{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    line-height: 1.9em;
+    color: #393f49 !important;
+    list-style: none;
+}
+.sub_container12second:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sub_container12second .P{
+    margin: 22px 0 12px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.9em;
+    color: #393f49 !important;
+}
