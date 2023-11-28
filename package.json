@@ -1,6 +1,7 @@
 {
   "name": "doccker",
   "version": "0.1.0",
+  "versionName":"Mentis",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
