@@ -6,7 +6,7 @@ import {
   faAngleDown,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-import dockerLogo from "../images/dockerLogo.png";
+import dockerLogo from "../../../images/dockerLogo.png";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
   return (

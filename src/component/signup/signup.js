@@ -1,5 +1,5 @@
 import React from "react";
-import dockerLogo from "../images/dockerLogo.png";
+import dockerLogo from "../../images/dockerLogo.png";
 import "./signup.css";
 function SignUp() {
   return (
