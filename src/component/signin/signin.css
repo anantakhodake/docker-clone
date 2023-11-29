@@ -1,17 +1,42 @@
+*{
+    background-color: #F9F9FA;
+}
 .signin_container{
     width: 500px;
-    height: 700px;
+    margin: 8%;
     border: 2px solid #c9cace;
     display: flex;
     align-items: center;
+    background-color: white;
     padding: 10px;
     justify-content: center;
     flex-direction: column;
+}
+.stext{
+    margin-top:20px;
+}
+.s_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.s_text a{
+    color: blue;
+}
+.ss_{
+    color: blue;
+}
+.hr{
+    background-color: white;
+
 }
 .signin_container1{
     display: flex;
     align-items: center;
     justify-content:center;
+    background-color: white;
+
     flex-direction: column;
 }
 .signin_container2{
@@ -19,6 +44,8 @@
     align-items: center;
     justify-content:center;
     flex-direction: column;
+    background-color: white;
+
 }
 .signin_container2 .sinput{
     border: 2px solid blue;

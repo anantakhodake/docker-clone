@@ -1,5 +1,6 @@
 import React from "react";
 import dockerLogo from "../../images/dockerLogo.png";
+import { Link } from "react-router-dom";
 import "./signup.css";
 function SignUp() {
   return (
@@ -48,7 +49,8 @@ function SignUp() {
               </a>
             </span>
           </p>
-          <button className="sbtn2">Already have an account?Sign In</button>
+          <Link to={"/signin"} >
+          <button className="sbtn2">Already have an account?Sign In</button></Link>
         </div>
       </div>
     </center>
