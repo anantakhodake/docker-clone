@@ -70,7 +70,7 @@ function Content4() {
     <div className="container4">
       <div>
         <center>
-          <img src={docker1} className="img" alt=""/>
+          <img src={docker1} className="img" alt="" />
         </center>
       </div>
     </div>
@@ -155,7 +155,7 @@ function Content7() {
                 <br /> Azure ACI, Google GKE, and more.
               </p>
               <div className="build2">
-                <img src={build} />
+                <img src={build} alt="" />
               </div>
             </div>
           </div>
@@ -169,7 +169,8 @@ function Content8() {
     <div className="container88">
       <div className="container8">
         <div>
-        <h3>Container development</h3></div>
+          <h3>Container development</h3>
+        </div>
         <h1>New to containers?</h1>
         <p>
           We got you covered! Get started with the basics with our guide to
@@ -231,11 +232,11 @@ function Content10() {
         </h1>
         <p>
           Our partnerships ensure that your development pipeline network will
-          work in your preferred environment —<br /> whether local or in the
-          cloud.
+          work in your preferred environment —<br />{" "}
+          <p>whether local or in the cloud.</p>
         </p>
         <div className="a">
-          <a>Connect with us</a>
+          <a href="">Our Trusted Partners</a>
           <FontAwesomeIcon icon={faArrowRight} />
         </div>
       </div>
@@ -243,7 +244,7 @@ function Content10() {
         <div className="aws_container">
           <div className="awsimg">
             <h5>AWS</h5>
-            <img src={aws} />
+            <img src={aws} alt=""/>
           </div>
           <p style={{ color: "white" }}>
             Simplify the development of your multi-
@@ -255,7 +256,7 @@ function Content10() {
 
         <div className="aws_container">
           <div className="awsimg">
-            <img src={azure} />
+            <img src={azure} alt=""/>
           </div>
           <p style={{ color: "white" }}>
             Seamlessly bring container applications from <br />
@@ -277,7 +278,7 @@ function Content10() {
       </div>
       <center>
         <div>
-          <h2 style={{ fontSize: 32, color: "white" }}>
+          <h2 className="h2__">
             Integrate with your favorite tools and images
           </h2>
         </div>
@@ -300,13 +301,13 @@ function Content11() {
       <div className="container_11main">
         <div className="container_11">
           <FontAwesomeIcon className="font" icon={faTree} />
-          <h2 style={{ textAlign: "left" }}>Download Docker</h2>
+          <h2>Download Docker</h2>
           <p>
             Learn how to install Docker for Mac, Windows, or <br /> Linux and
             explore our developer tools.
           </p>
           <div className="a">
-            <a>Get Started</a>
+            <a href="">Get Started</a>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>
@@ -319,7 +320,7 @@ function Content11() {
             with our step-by-step developer guide.
           </p>
           <div className="a">
-            <a>Learn Docker</a>
+            <a href="">Learn Docker</a>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>
@@ -332,7 +333,7 @@ function Content11() {
             <br /> (or other developers on your team).
           </p>
           <div className="a">
-            <a>Sign up for free</a>
+            <a href="">Sign up for free</a>
             <FontAwesomeIcon icon={faArrowRight} />
           </div>
         </div>
@@ -363,35 +364,35 @@ function Content12() {
         <ul className="sub_container12second">
           <div className="P">
             <li>
-              <a>Products</a>
+              <a href="">Products</a>
             </li>
           </div>
           <li>
-            <a>Docker Personal</a>
+            <a href="">Docker Personal</a>
           </li>
           <li>
-            <a>Docker Pro</a>
+            <a href="">Docker Pro</a>
           </li>
           <li>
-            <a>Docker Team</a>
+            <a href="">Docker Team</a>
           </li>
           <li>
-            <a>Docker Business</a>
+            <a href="">Docker Business</a>
           </li>
           <li>
-            <a>Docker Scout</a>
+            <a href="">Docker Scout</a>
           </li>
           <li>
-            <a>Desktop vs Docker Engine</a>
+            <a href="">Desktop vs Docker Engine</a>
           </li>
           <li>
-            <a>Docker Desktop</a>
+            <a href="">Docker Desktop</a>
           </li>
           <li>
             <a>Secure Software Supply Chain</a>
           </li>
           <li>
-            <a>Container Runtime</a>
+            <a href="">Container Runtime</a>
           </li>
         </ul>
       </div>
@@ -399,29 +400,29 @@ function Content12() {
         <ul className="sub_container12second">
           <div className="P">
             <li>
-              <a>Developers</a>
+              <a href="">Developers</a>
             </li>
           </div>
           <li>
-            <a>Docs</a>
+            <a href="">Docs</a>
           </li>
           <li>
-            <a>Getting Started</a>
+            <a href="">Getting Started</a>
           </li>
           <li>
-            <a>Extensions SDK</a>
+            <a href="">Extensions SDK</a>
           </li>
           <li>
-            <a>Community</a>
+            <a href="">Community</a>
           </li>
           <li>
-            <a>Open Source</a>
+            <a href="">Open Source</a>
           </li>
           <li>
-            <a>Preview Program</a>
+            <a href="">Preview Program</a>
           </li>
           <li>
-            <a>System Status</a>
+            <a href="">System Status</a>
           </li>
         </ul>
       </div>
@@ -429,21 +430,21 @@ function Content12() {
         <ul className="sub_container12second">
           <div className="P">
             <li>
-              <a>Pricing</a>
+              <a href="">Pricing</a>
             </li>
           </div>
           <li>
-            <a>FAQ</a>
+            <a href="">FAQ</a>
           </li>
           <li>
-            <a>Docker Verified Publisher</a>
+            <a href="">Docker Verified Publisher</a>
           </li>
           <li>
-            <a>Partners</a>
+            <a href="">Partners</a>
           </li>
           <div className="P">
             <li>
-              <a>Blog</a>
+              <a href="">Blog</a>
             </li>
           </div>
         </ul>
@@ -452,49 +453,49 @@ function Content12() {
         <ul className="sub_container12second">
           <div className="P">
             <li>
-              <a>About Us</a>
+              <a href="">About Us</a>
             </li>
           </div>
           <li>
-            <a>Trust</a>
+            <a href="">Trust</a>
           </li>
           <li>
-            <a>What is a Container</a>
+            <a href="">What is a Container</a>
           </li>
           <li>
-            <a>Why Docker</a>
+            <a href="">Why Docker</a>
           </li>
           <li>
-            <a>Events</a>
+            <a href="">Events</a>
           </li>
           <li>
-            <a>Swag Store</a>
+            <a href="">Swag Store</a>
           </li>
           <li>
-            <a>Newsroom</a>
+            <a href="">Newsroom</a>
           </li>
           <li>
-            <a>Careers</a>
+            <a href="">Careers</a>
           </li>
           <li>
-            <a>Contact Us</a>
+            <a href="">Contact Us</a>
           </li>
           <li>
-            <a>Customers </a>
+            <a href="">Customers </a>
           </li>
           <li>
-            <a>Trademark Guidelines</a>
+            <a href="">Trademark Guidelines</a>
           </li>
           <div className="P">
             <li>
-              <a>Languages</a>
+              <a href="">Languages</a>
             </li>
           </div>
           <li>
-            <a>English</a>
+            <a href="">English</a>
           </li>
           <li>
-            <a>日本語</a>
+            <a href="">日本語</a>
           </li>
         </ul>
       </div>
@@ -522,9 +523,7 @@ function Home() {
         <Content10 />
       </div>
       <Content11 />
-      <Content12 />
-      <SignIn />
-      <SignUp />
+      <Content12 />  
     </div>
   );
 }

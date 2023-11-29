@@ -272,6 +272,10 @@ margin-top:8%;
     text-align: left;
 
 }
+.a{
+    margin-top: 4%;
+
+}
 .container9 a:hover{
     cursor: pointer;
     text-decoration:underline;
@@ -292,16 +296,18 @@ margin-top:8%;
 .sub_container9 h4 {
     font-size: 30px;
     font-weight:400;
+    margin-top: 4%;
+
 }
 .sub_container9 p{
-    margin-top:-15px;
+    margin-top:10px;
 }
 
 /* content -10 */
 
 .container10 h1{
     font-weight: 700;
-    font-size: 56px;
+    font-size: 66px;
     color:white;
     line-height: 1.2em;
     margin: auto;
@@ -319,6 +325,10 @@ margin-top:8%;
     color: white;
 
   }
+  .a{
+    margin-top:10px;
+
+}
   .container10 a{
     color: blue;
     font-size: 20px;
@@ -329,6 +339,8 @@ margin-top:8%;
 .container10 p{
     font-size: 20px;
     color: white;
+    text-align: center;
+    margin-top: 5px;
 }
 .container10 a:hover{
     cursor: pointer;
@@ -342,6 +354,14 @@ margin-top:8%;
     font-size: 30px;
     color: white;
 
+}
+.aws_container{
+    margin-top: 4%;
+}
+.h2__{
+    font-size: 32px;
+    color: white;
+    margin-top: 4%;
 }
  .aws_container .awsimg img{
     width: 70px;
@@ -361,9 +381,10 @@ margin-top:8%;
     color: #000000 !important;
     line-height: 1.2em;
     margin: auto;
+    text-align: left;
     letter-spacing: -0.5px;
     font-family:"Poppins",sans-serif;
-    margin-top: -10px;
+    margin-top:2%;
 }
 .container___11{
     display: flex;
@@ -394,6 +415,10 @@ margin-top:8%;
     flex-direction: column;
     margin-top: 60px;
 }
+.container_11 h2,p{
+    text-align: left;
+    margin-top: 15px;
+}
 .container_11 a{
     font-size: 20px;
     margin-right: 10px;
@@ -401,6 +426,9 @@ margin-top:8%;
   outline-offset: 6px;
   color: #1d63ed !important;
   font-weight: 600;
+}
+ .container_11 .a{
+    text-decoration: none;
 }
 .font{
     margin-right: 360px;
@@ -523,3 +551,4 @@ margin-top:8%;
     line-height: 1.9em;
     color: #393f49 !important;
 }
+ 
