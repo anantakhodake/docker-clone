@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import dockerLogo from "../../images/dockerLogo.png";
 import "./signin.css";
 function SignIn() {
@@ -6,7 +7,7 @@ function SignIn() {
     <center>
       <div className="signin_container">
         <div className="signin_container1">
-          <img src={dockerLogo} />
+          <img src={dockerLogo} alt=""/>
           <h1>Sign In</h1>
           <p>Sign in to Docker to continue to Docker Hub.</p>
         </div>

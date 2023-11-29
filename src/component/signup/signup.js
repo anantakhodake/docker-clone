@@ -13,7 +13,9 @@ function SignUp() {
           <button className="sibtn2">Continue With Google</button>
           <br />
           <button className="sibtn2">Continue With Github</button>
-          <div className="hr">_______________________OR________________________</div>
+          <div className="hr">
+            _______________________OR________________________
+          </div>
           <div className="signup_container3">
             <input className="s_input" type="email" placeholder="email" />
             <input className="s_input" type="namer" placeholder="Username" />
@@ -21,16 +23,18 @@ function SignUp() {
 
             <div>
               <input type="checkbox" />
-              <span className="sp">Send me occasional product updates and announcements.</span>
+              <span className="sp">
+                Send me occasional product updates and announcements.
+              </span>
             </div>
             <p className="sp">
               This site is protected by reCAPTCHA and the Google
               <span>
-                <a style={{color:"blue"}}>Privacy Policy </a>
+                <a style={{ color: "blue" }}>Privacy Policy </a>
               </span>
               and{" "}
               <span>
-                <a style={{color:"blue"}}>apply.</a>
+                <a style={{ color: "blue" }}>apply.</a>
               </span>
             </p>
           </div>
@@ -38,7 +42,7 @@ function SignUp() {
           <p>
             By creating an account I agree to the
             <span>
-              <a style={{color:"blue"}}>
+              <a style={{ color: "blue" }}>
                 Subscription Service Agreement, Privacy Policy, Data Processing
                 Terms.
               </a>
