@@ -1,4 +1,5 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
+import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { faArrowRight, faTree } from "@fortawesome/free-solid-svg-icons";
@@ -19,33 +20,28 @@ import build from "../../images/build.jpg";
 import docker1 from "../../images/docker1.png";
 import homeheroscout from "../../images/homeheroscout.webp";
 
-
-
-
 function Content1() {
   return (
-    <div className="main">
-      <div className="main1">
+    <center>
+      <div className="main">
         <h1>Make better, secure software from the start</h1>
-      </div>
-      <div className="main2">
         <h3>Announcing Docker Scout general availability.</h3>
-      </div>
-      <div className="cbtn">
         <button>Learn About Docker Scout</button>
       </div>
-    </div>
+    </center>
   );
 }
 
-function Content2(){
-  return(
-      <div className="container">
-          <div>
-          <center><img src={homeheroscout} className="img"  /></center>
-          </div>
+function Content2() {
+  return (
+    <div className="container">
+      <div>
+        <center>
+          <img src={homeheroscout} className="img" />
+        </center>
       </div>
-  )
+    </div>
+  );
 }
 
 function Content3() {
@@ -55,37 +51,51 @@ function Content3() {
         <h4>What is Docker?</h4>
       </center>
       <center>
-        <h1>Trusted by developers <br/>
-         Chosen by Fortune 100 companies</h1>
+        <h1>
+          Trusted by developers <br />
+          Chosen by Fortune 100 companies
+        </h1>
       </center>
-        <p>
-          Docker provides a suite of development tools, services, trusted
-          content, and automations, used individually or
-           <br/> together, to accelerate
-          the delivery of secure applications.
-        </p>
+      <p>
+        Docker provides a suite of development tools, services, trusted content,
+        and automations, used individually or
+        <br /> together, to accelerate the delivery of secure applications.
+      </p>
     </div>
   );
 }
 
-function Content4(){
-  return(
-      <div className="container4">
-          <div>
-          <center><img src={docker1} className="img"  /></center>
-          </div>
+function Content4() {
+  return (
+    <div className="container4">
+      <div>
+        <center>
+          <img src={docker1} className="img" alt=""/>
+        </center>
       </div>
-  )
+    </div>
+  );
 }
 
-function Content5(){
-  return(
-      <div className="container5">
-          <p><span className="number">20M+</span> <br/>monthly developers</p>
-          <p><span className="number">7M+</span><br/>applications</p>
-          <p><span className="number">20B+</span><br/>monthly image pulls</p>
-      </div>
-  )
+function Content5() {
+  return (
+    <div className="container5">
+      <p>
+        <span className="number">20M+</span> <br />
+        monthly developers
+      </p>
+      <p>
+        <span className="number">7M+</span>
+        <br />
+        applications
+      </p>
+      <p>
+        <span className="number">20B+</span>
+        <br />
+        monthly image pulls
+      </p>
+    </div>
+  );
 }
 
 function Content6() {
@@ -125,31 +135,30 @@ function Content7() {
       <FontAwesomeIcon icon={faRocket} />
       {isClick && (
         <div className={`show-build ${isClick ? "is-visible" : ""}`}>
-            <div className="build-container">
-          
-          <div className="build1">
-            <h1>Build</h1>
-            <h3>Spin up new environments quickly</h3>
-            <p>
-              Develop your own unique applications with Docker images and create
-              multiple containers using Docker Compose.
-            </p>
-            <h3>Integrate with your existing tools</h3>
-            <p>
-              Docker works with all development tools such as VS Code, CircleCI,
-              and GitHub.
-            </p>
-            <h3>Containerize applications for consistency</h3>
-            <p>
-              Run in any environment consistently from on-premises Kubernetes to
-              AWS ECS,
-              <br /> Azure ACI, Google GKE, and more.
-            </p>
-            <div className="build2">
+          <div className="build-container">
+            <div className="build1">
+              <h1>Build</h1>
+              <h3>Spin up new environments quickly</h3>
+              <p>
+                Develop your own unique applications with Docker images and
+                create multiple containers using Docker Compose.
+              </p>
+              <h3>Integrate with your existing tools</h3>
+              <p>
+                Docker works with all development tools such as VS Code,
+                CircleCI, and GitHub.
+              </p>
+              <h3>Containerize applications for consistency</h3>
+              <p>
+                Run in any environment consistently from on-premises Kubernetes
+                to AWS ECS,
+                <br /> Azure ACI, Google GKE, and more.
+              </p>
+              <div className="build2">
                 <img src={build} />
+              </div>
             </div>
           </div>
-        </div>
         </div>
       )}
     </div>
@@ -159,7 +168,8 @@ function Content8() {
   return (
     <div className="container88">
       <div className="container8">
-        <h3>Container development</h3>
+        <div>
+        <h3>Container development</h3></div>
         <h1>New to containers?</h1>
         <p>
           We got you covered! Get started with the basics with our guide to
@@ -167,12 +177,12 @@ function Content8() {
           virtual machines, and more.
         </p>
         <div className="a">
-        <a>Read the container guide</a>
-        <FontAwesomeIcon icon={faArrowRight} />
+          <a href="">Read the container guide</a>
+          <FontAwesomeIcon icon={faArrowRight} />
         </div>
       </div>
       <div className="img1">
-        <img src={content8} />
+        <img src={content8} alt="" />
       </div>
     </div>
   );
@@ -198,8 +208,8 @@ function Content9() {
         <div className="sub_container9">
           <h4>Join our open source program</h4>
           <p>
-            Our Docker-Sponsored Open Source program is ideal for<br/> developers
-            working on non-commercial projects.
+            Our Docker-Sponsored Open Source program is ideal for
+            <br /> developers working on non-commercial projects.
           </p>
           <div className="a">
             <a>Apply today</a>
@@ -235,7 +245,7 @@ function Content10() {
             <h5>AWS</h5>
             <img src={aws} />
           </div>
-          <p style={{color:"white"}}>
+          <p style={{ color: "white" }}>
             Simplify the development of your multi-
             <br />
             container applications from Docker CLI to
@@ -247,7 +257,7 @@ function Content10() {
           <div className="awsimg">
             <img src={azure} />
           </div>
-          <p style={{color:"white"}}>
+          <p style={{ color: "white" }}>
             Seamlessly bring container applications from <br />
             your local machine and run them in Azure <br />
             Container Instances.
@@ -258,7 +268,7 @@ function Content10() {
           <div className="awsimg">
             <img src={green} />
           </div>
-          <p style={{color:"white"}}>
+          <p style={{ color: "white" }}>
             Easily distribute and share Docker images with <br />
             the JFrog Artifactory image repository and <br></br> integrate all
             of your development tools.
@@ -267,11 +277,11 @@ function Content10() {
       </div>
       <center>
         <div>
-          <h2 style={{fontSize:32,color:"white"}}>Integrate with your favorite tools and images</h2>
+          <h2 style={{ fontSize: 32, color: "white" }}>
+            Integrate with your favorite tools and images
+          </h2>
         </div>
-        <div>
-
-        </div>
+        <div></div>
       </center>
     </div>
   );
@@ -339,7 +349,7 @@ function Content11() {
           <button className="container11btn">Find Pricing</button>
         </div>
       </div>
-      </div>
+    </div>
   );
 }
 
@@ -508,7 +518,7 @@ function Home() {
         <Content8 />
       </div>
       <Content9 />
-      <div style={{backgroundColor:"black"}}>
+      <div style={{ backgroundColor: "black" }}>
         <Content10 />
       </div>
       <Content11 />

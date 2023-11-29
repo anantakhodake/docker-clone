@@ -10,12 +10,12 @@ import dockerLogo from "../../../images/dockerLogo.png";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="main">
-      <div className="main1">
-        <ul className="header">
-          <img src={dockerLogo} />
+    <div className="navcontainer">
+      <div className="navmain1">
+        <ul className="navheader">
+          <img src={dockerLogo}  alt=""/>
           <li>
-            <Link>Products</Link>
+            <Link className="navlinks">Products</Link>
             <FontAwesomeIcon icon={faAngleDown} />
           </li>
           <li
@@ -24,7 +24,7 @@ function Navbar() {
           }}
            className="developer-menu"
           >
-            <Link>Developers</Link>
+            <Link className="navlinks">Developers</Link>
             <FontAwesomeIcon icon={faAngleDown} />
             {isHovered && (
               <ul  className={`show-submenu ${isHovered ? "is-visible":""}`}>
@@ -39,25 +39,27 @@ function Navbar() {
             )}
           </li>
           <li>
-            <Link>Pricing</Link>
+            <Link className="navlinks">Pricing</Link>
           </li>
           <li>
-            <Link>Blog</Link>
+            <Link className="navlinks">Blog</Link>
           </li>
           <li>
-            <Link>About</Link>
+            <Link className="navlinks">About</Link>
             <FontAwesomeIcon icon={faAngleDown} />
           </li>
           <li>
-            <Link>Partners</Link>
+            <Link className="navlinks">Partners</Link>
           </li>
-          <div className="btn">
-            <div className="first">
+          <div className="navbtn">
+            <Link className="navlinks" to={"/signin"}>
+            <div className="navfirst">
               <FontAwesomeIcon className="glass" icon={faMagnifyingGlass} />
               <button>Sign in</button>
             </div>
+            </Link>
             <div>
-              <button className="btn1">Get started</button>
+              <button className="navbtn1">Get started</button>
             </div>
           </div>
         </ul>
