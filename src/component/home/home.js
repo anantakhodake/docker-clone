@@ -523,7 +523,8 @@ function Home() {
         <Content10 />
       </div>
       <Content11 />
-      <Content12 />  
+      <Content12 />
+      <SignUp />  
     </div>
   );
 }
