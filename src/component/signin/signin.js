@@ -5,6 +5,10 @@ import "./signin.css";
 function SignIn() {
   return (
     <center>
+      <div className="stext">
+        <span>Don't have an account?</span>
+        <Link className="ss_" to={"/signup"}>Sign Up</Link>
+      </div>
       <div className="signin_container">
         <div className="signin_container1">
           <img src={dockerLogo} alt=""/>
@@ -22,6 +26,10 @@ function SignIn() {
           <button className="sbtn2">Continue With Google</button>
           <button className="sbtn2">Continue With Github</button>
         </div>
+      </div>
+      <div className="s_text">
+        <a href=""> Privacy Policy </a>
+        <a href=""> Terms of Service</a>
       </div>
     </center>
   );
