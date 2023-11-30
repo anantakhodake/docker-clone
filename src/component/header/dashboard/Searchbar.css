@@ -20,7 +20,8 @@
     border: none;
     padding: 5px;
     background-color: blue;
-    color: white;   
+    color: white; 
+    border:0px;  
 }
 .innerdiv{
     display: flex;

@@ -2,8 +2,10 @@ import React from "react";
 import Searchbar from "./Searchbar";
 import "./DashboardHeader.css";
 import { Link } from "react-router-dom";
+import Dashboardhomepage from "./Dashboardhomepage";
 function DashboardHeader() {
   return (
+    <div>
     <div className="dashboardheader_container">
       <div className="dashhead">
         <div className="dcontainer_1">
@@ -23,6 +25,8 @@ function DashboardHeader() {
         <button className="d_btn1">Upgrade</button>
         <button className="d_btn1">Ananta </button>
       </div>
+    </div>
+    <Dashboardhomepage />
     </div>
   );
 }
