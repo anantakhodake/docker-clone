@@ -7,11 +7,13 @@ function SignIn() {
     <center>
       <div className="stext">
         <span>Don't have an account?</span>
-        <Link className="ss_" to={"/signup"}>Sign Up</Link>
+        <Link className="ss_" to={"/signup"}>
+          Sign Up
+        </Link>
       </div>
       <div className="signin_container">
         <div className="signin_container1">
-          <img src={dockerLogo} alt=""/>
+          <img src={dockerLogo} alt="" />
           <h1>Sign In</h1>
           <p>Sign in to Docker to continue to Docker Hub.</p>
         </div>
@@ -21,7 +23,9 @@ function SignIn() {
             type="name"
             placeholder="Enter username or email"
           />
-          <button className="sbtn1">Continue</button>
+          <Link to={"/dashboard"}>
+            <button className="sbtn1">Continue</button>
+          </Link>
           <div className="hr">__________________OR___________________</div>
           <button className="sbtn2">Continue With Google</button>
           <button className="sbtn2">Continue With Github</button>

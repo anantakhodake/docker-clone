@@ -260,6 +260,7 @@ margin-top:8%;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   text-align: left;
+  margin-bottom: 10px;
 
 }
 .container9 p {
@@ -323,24 +324,22 @@ margin-top:8%;
     margin-top:150px;
     text-align: left;
     color: white;
-
   }
   .a{
     margin-top:10px;
-
 }
   .container10 a{
     color: blue;
     font-size: 20px;
     margin-right: 10px;
     text-align: left;
-
 }
 .container10 p{
     font-size: 20px;
     color: white;
     text-align: center;
     margin-top: 5px;
+
 }
 .container10 a:hover{
     cursor: pointer;
@@ -349,19 +348,23 @@ margin-top:8%;
 .awsimg{
     display: flex;
     align-items: center;
+
 }
  .aws_container .awsimg h5{
     font-size: 30px;
     color: white;
 
+
 }
 .aws_container{
     margin-top: 4%;
+    
 }
 .h2__{
     font-size: 32px;
     color: white;
     margin-top: 4%;
+
 }
  .aws_container .awsimg img{
     width: 70px;
@@ -371,7 +374,7 @@ margin-top:8%;
     display: flex;
     align-items: center;
     justify-content:space-around;
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 
 /* content 11 */
