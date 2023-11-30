@@ -23,7 +23,7 @@ function SignIn() {
             type="name"
             placeholder="Enter username or email"
           />
-          <Link to={"/DashboardHeader"}>
+          <Link to={"/dashboard"}>
             <button className="sbtn1">Continue</button>
           </Link>
           <div className="hr">__________________OR___________________</div>
