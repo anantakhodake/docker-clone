@@ -4,6 +4,8 @@ import Home from "./component/home/home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./component/signin/signin";
 import SignUp from "./component/signup/signup";
+import { Dashboard } from "@mui/icons-material";
+import DashboardHeader from "./component/header/dashboard/DashboardHeader";
 function App() {
   return (
     <BrowserRouter>
@@ -11,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<><SignUp /></>} />
-        <Route path="/dashboard" element={<>dashboard</>} />
+        <Route path="/dashboardHeader" element={<><DashboardHeader/></>} />
         <Route path="/dashboard/search" element={<>explore</>} />
         <Route
           path="/dashboard/repositories/:username"

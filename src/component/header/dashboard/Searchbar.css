@@ -1,0 +1,32 @@
+
+  .d_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    gap: 5px;
+    border: 1px solid rgb(225, 221, 221);
+    padding: 5px;
+    border-radius: 5px;
+  }
+.dicon{
+    display: flex;
+    align-items:center ;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+}
+.d_input2{
+    border: none;
+    padding: 5px;
+    background-color: blue;
+    color: white;   
+}
+.innerdiv{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+    padding: 3px;
+}

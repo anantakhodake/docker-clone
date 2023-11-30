@@ -1,0 +1,62 @@
+
+.dashboardheader_container{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-around;
+    border: 2px solid blue;
+    background-color: blue;
+}
+.dashhead{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: blue;
+}
+.dcontainer_1  span{
+    color:rgb(212, 206, 206);
+    background-color: blue;
+    font-size: 20px;
+}
+.dcontainer_1 h1{
+    background-color: blue;
+    color: white;
+}
+.dashboard_links{
+    margin-left: 40px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.dashboard_links:hover{
+    cursor: pointer;
+    color: rgb(239, 231, 231);
+}
+.d_links{
+    background-color: blue;
+}
+.dashboard_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: blue;
+
+}
+.d_btn1{
+    border: 2px solid white;
+    padding:8px;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 244, 220);
+    color: rgb(169, 71, 15);
+
+}
+.d_btn1:hover{
+  color: white;
+  background-color: rgb(169, 71, 15);
+  border: 2px solid white;
+}
