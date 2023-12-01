@@ -8,8 +8,11 @@ import {
   faGlobe,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import DashboardHeader from "./DashboardHeader";
 function Dashboardhomepage() {
   return (
+    <>
+    <DashboardHeader/>
     <div className="d_homepagecontainer">
       <div className="ddsubhome">
         <div className="dsub_homepagecontainer">
@@ -95,6 +98,7 @@ function Dashboardhomepage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
