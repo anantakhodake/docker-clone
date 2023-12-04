@@ -14,9 +14,9 @@ function DashboardHeader() {
         </div>
        <Searchbar/>
         <div className="d_links">
-          <Link className="dashboard_links">Explore</Link>
-          <Link className="dashboard_links" to={"/dashboard/repositories/bajarang45"}>Repositories</Link>
           <Link to={"/dashboard/search"} className="dashboard_links">Explore</Link>
+          <Link className="dashboard_links" to={"/dashboard/repositories/bajarang45"}>Repositories</Link>
+          <Link to={"/dashboard/orgs"} className="dashboard_links">Organization</Link>
           <Link className="dashboard_links">Help</Link>
         </div>
       </div>
