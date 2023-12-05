@@ -8,6 +8,7 @@ import Reporitories from "./component/dashboard/repositories/Reporitories";
 import { Dashboard } from "@mui/icons-material";
 import DashboardHeader from "./component/header/dashboard/DashboardHeader";
 import Dashboardhomepage from "./component/header/dashboard/Dashboardhomepage";
+import Profile from "./component/dashboard/profile/Profile";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/signup" element={<><SignUp /></>} />
         <Route path="/dashboard" element={<><Dashboardhomepage/></>} />
         <Route path="/dashboard/search" element={<>explore</>} />
+        <Route path="/dashboard/profile" element={<><Profile/></>} />
         <Route
           path="/dashboard/repositories/:userid"
           element={<><Reporitories/> </>}

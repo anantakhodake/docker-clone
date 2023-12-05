@@ -1,0 +1,74 @@
+.profiletabs_container {
+    margin-top: 60px;
+}
+.tabs_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.tabs_heading button {
+  font-size: 1rem;
+  text-shadow: currentcolor 0.5px 0px 0px;
+
+  padding: 4px 8px;
+  letter-spacing: 0.02em;
+  border: none;
+}
+.tabs_heading button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  border-bottom: 4px solid transparent;
+  color: blue;
+}
+.repository_tabscard {
+  width: 1000px;
+}
+.tabs_content {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+  gap: 30px;
+}
+.tabs_contentrepo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+.tabs_content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.tab_icon {
+  font-size: 50px;
+}
+.active {
+  color: red;
+}
+.active:hover {
+  color: blue;
+}
+.prhomepage_2{
+  display: flex;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border:2px solid #c9cace;
+
+}
+.prhomepage_2:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pr_public{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

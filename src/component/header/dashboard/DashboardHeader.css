@@ -60,3 +60,32 @@
   background-color: rgb(169, 71, 15);
   border: 2px solid white;
 }
+.fingerprint_image{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    background-color:blue;
+}
+.d_btn2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background-color: blue;
+}
+.show-submenu.is-visible{
+    display: block;
+    width: 180px;
+    border: 2px solid black;
+    text-align: left;
+    opacity: 1;
+}
+.show-submenu li a {
+    color:rgb(81, 79, 79);
+    text-align:center;
+}
+.pbtn{
+    background-color: blue;
+    border: none;
+    color: white;
+}
