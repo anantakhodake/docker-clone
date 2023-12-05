@@ -1,4 +1,5 @@
 import React from "react";
+import "./Reporitories.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretDown,
@@ -13,18 +14,18 @@ function Reporitories() {
   return (
     <div>
       <DashboardHeader/>
-      <div className="d_homepagecontainer">
-        <div className="ddsubhome">
-          <div className="dsub_homepagecontainer">
-            <div className="d_homepage">
-              <div className="sub_dhomepage">
-                <input className="h_input" type="text" placeholder="Bajarang" />
+      <div className="r_homepagecontainer">
+        <div className="rrsubhome">
+          <div className="rsub_homepagecontainer">
+            <div className="r_homepage">
+              <div className="sub_rhomepage">
+                <input className="r_input" type="text" placeholder="Bajarang" />
                 <FontAwesomeIcon icon={faCaretDown} />
               </div>
             </div>
 
-            <div className="d_homepage">
-              <div className="sub_dhomepage">
+            <div className="r_homepage">
+              <div className="sub_rhomepage">
                 <input
                   className="h_input"
                   type="text"
@@ -34,10 +35,10 @@ function Reporitories() {
               </div>
             </div>
 
-            <div className="d_homepage">
-              <div className="sub_dhomepage">
+            <div className="r_homepage">
+              <div className="sub_rhomepage">
                 <input
-                  className="h_input"
+                  className="r_input"
                   type="text"
                   placeholder="All content"
                 />
@@ -45,18 +46,18 @@ function Reporitories() {
               </div>
             </div>
 
-            <div className="d_homepagebtn">
-              <div className="sub_dhomepagebtn">
+            <div className="r_homepagebtn">
+              <div className="sub_rhomepagebtn">
                 <button>Create Repository</button>
               </div>
             </div>
           </div>
-          <div className="homepage_2">
+          <div className="rhomepage_2">
             <div>
               <h4>{username.userid} / test</h4>
               <p>contains:no contains| last push:2days ago</p>
             </div>
-            <div className="d_public">
+            <div className="r_public">
               <FontAwesomeIcon icon={faGlobe} />
               <h5>public</h5>
             </div>

@@ -6,6 +6,7 @@ import { faArrowRight, faTree } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../header/home/navbar";
 import SignIn from "../signin/signin";
+// import Profile from "../dashboard/profile/Profile";
 import SignUp from "../signup/signup";
 // import Footer from "./footer";
 
@@ -21,6 +22,7 @@ import docker1 from "../../images/docker1.png";
 import homeheroscout from "../../images/homeheroscout.webp";
 import { Dashboard } from "@mui/icons-material";
 import DashboardHeader from "../header/dashboard/DashboardHeader";
+import Profile from "../dashboard/profile/Profile";
 
 function Content1() {
   return (
@@ -525,6 +527,7 @@ function Home() {
       </div>
       <Content11 />
       <Content12 /> 
+      <Profile /> 
     </div>
   );
 }
