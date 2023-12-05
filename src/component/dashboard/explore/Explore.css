@@ -13,17 +13,21 @@
 }
 .input_checkbox{
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     gap: 20px;
 }
 .input_p{
     display: flex;
-    gap: 5px;
+    gap: 20px;
     border:none;
     align-items: left;
     justify-content: center;
     flex-direction: column;
+}
+.input_p div{
+    gap: 20px;
+    display: flex;
 }
 .ebtn_div{
     display: flex;
