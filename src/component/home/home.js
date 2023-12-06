@@ -6,7 +6,6 @@ import { faArrowRight, faTree } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../header/home/navbar";
 import SignIn from "../signin/signin";
-// import Profile from "../dashboard/profile/Profile";
 import SignUp from "../signup/signup";
 // import Footer from "./footer";
 
@@ -527,7 +526,6 @@ function Home() {
       </div>
       <Content11 />
       <Content12 /> 
-      <Profile /> 
     </div>
   );
 }
