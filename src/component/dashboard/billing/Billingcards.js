@@ -11,6 +11,20 @@ function Billingcards() {
           <h2>bajarang45</h2>
         </div>
       </div>
+
+      <div className="b_card2container">
+        <div className="b_card2">
+            <h2>Docker Personal</h2>
+            <p>Docker Desktop</p>
+            <p>Unlimited public repositories</p>
+            <p>Docker Engine + Kubernetes</p>
+            <p>Limited image pulls per day</p>
+            <p>Unlimited scoped tokens</p>
+        </div>
+        <div className="b_card2btn">
+            <button>Buy now</button>
+        </div>
+      </div>
     </div>
   );
 }

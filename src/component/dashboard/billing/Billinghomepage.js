@@ -1,9 +1,12 @@
 import React from "react";
 import "./Billinghomepage.css";
 import Billingcards from "./Billingcards";
+import DashboardHeader from "../../header/dashboard/DashboardHeader";
 
 function Billinghomepage() {
   return (
+    <>
+    <DashboardHeader />
     <div className="billing_container">
       <div className="b_content1">
         <h1>Billing Details</h1>
@@ -16,6 +19,7 @@ function Billinghomepage() {
       </div>
       <Billingcards />
     </div>
+    </>
   );
 }
 
