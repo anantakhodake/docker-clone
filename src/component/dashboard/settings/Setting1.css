@@ -1,0 +1,71 @@
+.s_links{
+    width: 250px;
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+.s_link{
+    color: blue;
+    font-size:18px;
+}
+.s_image{
+    height: 80px;
+    width: 80px;
+}
+.ss_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    gap: 30px;
+    padding:20px;
+    margin: 80px 0px 0px 70px;
+}
+.s_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.s_user1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.s_user1 h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.s_user1 a{
+  font-size: 0.86rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.333;
+  color: blue;
+  text-decoration: none;
+}
+.s_user1 a:hover{
+    color: darkblue;
+    text-decoration: underline;
+}
+.s_user3{
+    display: flex;
+    gap:20px;
+}
+.s_user3 span{
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 16px;
+    font-weight: 400;
+    color: #8993a5;
+}
+.s_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 4px 0;
+    gap: 5px;
+}

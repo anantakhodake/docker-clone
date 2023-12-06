@@ -1,0 +1,58 @@
+.g_content1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.Gtab_container{
+    display: flex;
+    border: 1px solid #8993a5;
+    height:200px;
+
+}
+.g_content{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:20px;
+}
+.g_content1 h2{
+  font-size: 1.286rem;
+  font-weight: 500;
+  color: black;
+  margin-right:750px;
+}
+.gg_main{
+    display: flex;
+    align-items: left;
+}
+.gg_{
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    margin-right:180px;
+    color: black;
+}
+.gg_ span{
+    color:green ;
+}
+.g_input{
+    display: flex;
+    align-items:center ;
+    width:600px;
+    border:0px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid blue;
+}
+.g_btn button{
+    width:70px;
+    background-color: rgb(29, 99, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
