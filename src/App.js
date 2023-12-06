@@ -10,6 +10,7 @@ import DashboardHeader from "./component/header/dashboard/DashboardHeader";
 import Dashboardhomepage from "./component/header/dashboard/Dashboardhomepage";
 import Profile from "./component/dashboard/profile/Profile";
 import Explore from "./component/dashboard/explore/Explore"
+import Settings from "./component/dashboard/settings/Settings";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/dashboard" element={<><Dashboardhomepage/></>} />
         <Route path="/dashboard/search" element={<><Explore/></>} />
         <Route path="/dashboard/profile" element={<><Profile/></>} />
+        <Route path="/dashboard/setting" element={<><Settings /></>} />
         <Route
           path="/dashboard/repositories/:userid"
           element={<><Reporitories/> </>}
