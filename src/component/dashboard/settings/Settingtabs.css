@@ -22,7 +22,9 @@
 }
 .active{
     color:blue;
+
 }
 .active:hover{
-    color: green;
+    color:black;
+
 }
