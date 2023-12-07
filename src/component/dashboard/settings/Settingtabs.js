@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Settingtabs.css";
 import Genaralsettingtab from "./Genaralsettingtab";
 import Securitysettingtab from "./Securitysettingtab";
+import Defaultprivacysettingtab from "./Defaultprivacysettingtab";
 
 function Settingtabs() {
   const [tab, setTab] = useState("Genaral");
@@ -22,17 +23,18 @@ function Settingtabs() {
             Security
           </button>
           <button>Default Privacy</button>
-          <button>Convert Account</button>
+          <button>Notifications</button>
           <button>Convert Account</button>
           <button>Deactivate Acc</button>
         </div>
-        {tab === "Genaral" ? (
+        <Defaultprivacysettingtab/>
+        {/* {tab === "Genaral" ? (
           <Genaralsettingtab />
         ) : tab === "Security" ? (
           <Securitysettingtab />
         ) : (
           <Genaralsettingtab />
-        )}
+        )} */}
       </div>
     </>
   );
