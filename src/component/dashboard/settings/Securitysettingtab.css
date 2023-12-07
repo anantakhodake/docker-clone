@@ -1,0 +1,49 @@
+.stab_container{
+    display: flex;
+    border: 1px solid #8993a5;
+    margin-top: 50px;
+}
+.s_content1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.ss_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.ss_ p{
+    color: black;
+    text-align: center;
+}
+.s_content{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:20px;
+}
+.s_content1 h2{
+  font-size: 1.286rem;
+  font-weight: 500;
+  color: black;
+  font-weight:bolder ;
+  margin-right:750px;
+}
+.s_btn button{
+    background-color: rgb(29, 99, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.s_btn button:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}

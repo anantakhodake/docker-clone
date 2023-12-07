@@ -1,26 +1,40 @@
 import React, { useState } from "react";
 import "./Settingtabs.css";
 import Genaralsettingtab from "./Genaralsettingtab";
+import Securitysettingtab from "./Securitysettingtab";
 
 function Settingtabs() {
   const [tab, setTab] = useState("Genaral");
   return (
-    <div className="settingtabs_container">
-      <div className="s_card1">
-        <button
-          onClick={() => setTab("Genaral")}
-          className={` ${tab == "Genaral" ? "active" : ""}`}
-        >
-          Genaral
-        </button>
-        <button>Security</button>
-        <button>Default Privacy</button>
-        <button>Convert Account</button>
-        <button>Convert Account</button>
-        <button>Deactivate Acc</button>
+    <>
+      <div className="settingtabs_container">
+        <div className="s_card1">
+          <button
+            onClick={() => setTab("Genaral")}
+            className={` ${tab == "Genaral" ? "active" : ""}`}
+          >
+            Genaral
+          </button>
+          <button
+            onClick={() => setTab("Security")}
+            className={` ${tab == "Security" ? "active" : ""}`}
+          >
+            Security
+          </button>
+          <button>Default Privacy</button>
+          <button>Convert Account</button>
+          <button>Convert Account</button>
+          <button>Deactivate Acc</button>
+        </div>
+        {tab === "Genaral" ? (
+          <Genaralsettingtab />
+        ) : tab === "Security" ? (
+          <Securitysettingtab />
+        ) : (
+          <Genaralsettingtab />
+        )}
       </div>
-      <Genaralsettingtab />
-    </div>
+    </>
   );
 }
 
