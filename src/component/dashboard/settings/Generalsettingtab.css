@@ -4,10 +4,13 @@
     gap: 15px;
     align-items: center;
 }
+.g_content1 p{
+    margin-right: 480px;
+}
 .Gtab_container{
     display: flex;
     border: 1px solid #8993a5;
-    height:200px;
+    margin-top: 50px;
 
 }
 .g_content{
@@ -34,6 +37,13 @@
     margin-right:180px;
     color: black;
 }
+.gga_{
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    margin-right:360px;
+    color: black;
+}
 .gg_ span{
     color:green ;
 }
@@ -44,10 +54,19 @@
     border:0px;
     padding: 10px;
     font-size: 15px;
-    border: 2px solid blue;
+    border: 2px solid #8993a5;
+}
+.ga_input{
+    display: flex;
+    align-items:center ;
+    width:400px;
+    border:0px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #8993a5;
 }
 .g_btn button{
-    width:70px;
+    width:200px;
     background-color: rgb(29, 99, 237);
     border: none;
     padding: 10px;
@@ -55,4 +74,23 @@
     color: white;
     font-size: 15px;
     font-weight: bolder;
+}
+.g_btn button:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}
+.ga_btn button:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}
+.ga_btn button{
+    width:150px;
+    background-color: rgb(29, 99, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left:10px;
 }
