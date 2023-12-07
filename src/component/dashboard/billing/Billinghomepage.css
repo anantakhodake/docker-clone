@@ -1,0 +1,40 @@
+.b_content1{
+    display: flex;
+    align-items:left;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    gap: 10px;
+    margin-left:100px;
+    margin-top: 100px;
+}
+  .billing_container{
+    display: flex;
+  }
+.b_content1 h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 1.333;
+    color: black;
+}
+.b_content1 p{
+  color: #677285;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.b_content1 button{
+  display: flex;
+  border: none;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 16px;
+  width: 300px;
+  background-color: rgb(29, 99, 237);
+  color: white;
+  font-size: 14px;
+  font-weight:600;
+}
