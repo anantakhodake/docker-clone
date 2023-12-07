@@ -3,6 +3,7 @@ import "./Settingtabs.css";
 import Genaralsettingtab from "./Genaralsettingtab";
 import Securitysettingtab from "./Securitysettingtab";
 import Defaultprivacysettingtab from "./Defaultprivacysettingtab";
+import Notificationsettingtab from "./Notificationsettingtab";
 
 function Settingtabs() {
   const [tab, setTab] = useState("Genaral");
@@ -27,7 +28,8 @@ function Settingtabs() {
           <button>Convert Account</button>
           <button>Deactivate Acc</button>
         </div>
-        <Defaultprivacysettingtab/>
+        <Notificationsettingtab />
+        {/* <Defaultprivacysettingtab/> */}
         {/* {tab === "Genaral" ? (
           <Genaralsettingtab />
         ) : tab === "Security" ? (
