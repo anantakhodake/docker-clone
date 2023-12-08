@@ -11,7 +11,6 @@ import Billing from "./component/dashboard/billing/Billing"
 import Dashboardhomepage from "./component/header/dashboard/Dashboardhomepage";
 import Profile from "./component/dashboard/profile/Profile";
 import Explore from "./component/dashboard/explore/Explore"
-import Billing from "./component/dashboard/billing/Billing";
 import Settings from "./component/dashboard/settings/Settings";
 function App() {
   return (
