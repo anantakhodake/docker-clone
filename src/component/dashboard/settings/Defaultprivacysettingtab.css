@@ -1,0 +1,55 @@
+.dp_public{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.dp_private{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.dp_input{
+    font-size: 20px;
+}
+.dp_content1 h2{
+    font-size: 1.286rem;
+    font-weight: 500;
+    color: black;
+    font-weight:400 ;
+    margin-right:750px;
+  }
+  .dp_content1 p{
+    color: red;
+    font-size: 14px;
+    margin-top:20px;
+
+  }
+  .dp-container p{
+    color: black;
+  }
+.dp_{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.dp-container{
+    display: flex;
+    width:600px;
+    justify-content: space-between;
+    margin-bottom: 20px ;
+
+}
+.dp_btn {
+    background-color: rgb(29, 99, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.dp_btn:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}

@@ -1,0 +1,42 @@
+.n_content1 h2{
+    font-size: 1.286rem;
+    font-weight: 500;
+    color: black;
+    font-weight:400 ;
+    margin-right:750px;
+  }
+  .n_content1{
+    padding: 10px;
+  }
+  .n_content1 p{
+    color: rgb(66, 66, 66);
+    font-size: 1rem;
+  }
+  .n_content2{
+    display: flex;
+    align-items: center;
+    gap:40px;
+  }
+  .ni_{
+    display: flex;
+    gap:10px;
+    margin-top:20px;
+  }
+  .ni_ span{
+  font-size: 1rem;
+  font-weight: 400;
+  }
+  .n_btn {
+    background-color: rgb(29, 99, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top:20px;
+}
+.n_btn:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}

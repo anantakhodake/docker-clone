@@ -22,6 +22,7 @@ function DashboardHeader() {
           <Link className="dashboard_links">Help</Link>
           <Link to={"/dashboard/profile"} className="dashboard_links">Profile</Link>
           <Link to={"/dashboard/billing"} className="dashboard_links">Billing</Link>
+          <Link to={"/dashboard/setting"} className="dashboard_links"> Account Settings</Link>
         </div>
       </div>
       <div className="dashboard_buttons">

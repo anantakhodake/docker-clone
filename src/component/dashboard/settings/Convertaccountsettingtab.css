@@ -1,0 +1,31 @@
+.ca_content1 h2{
+    font-size: 1.286rem;
+    font-weight: 500;
+    color: black;
+    font-weight:bold ;
+    margin-right:600px;
+  }
+  .ca_content1{
+    border: 1px solid #8993a5 ;
+    padding:20px;
+    margin-right: 20px;
+  }
+  .ca_content1 p{
+    color:black;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .ca_btn {
+    background-color: rgb(213, 37, 54);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top:20px;
+}
+.ca_btn:hover{
+    cursor: pointer;
+    background-color:darkred;
+}
