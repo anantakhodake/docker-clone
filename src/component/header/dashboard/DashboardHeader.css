@@ -89,3 +89,10 @@
     border: none;
     color: white;
 }
+.dh_link{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}

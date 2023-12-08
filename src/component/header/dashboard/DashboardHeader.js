@@ -31,7 +31,7 @@ function DashboardHeader() {
             setIsHovered(!isHovered)
           }} className="d_btn2">
           <img className="fingerprint_image"  src={blueFingerprint} alt="" />
-           <button className="pbtn"><Link>bajarang45</Link></button> 
+           <button className="pbtn"><Link className="dh_link">bajarang45</Link></button> 
           {isHovered && (
           <ul  className={`show-submenu ${isHovered ? "is-visible":""}`}>
                 <li><div>Developers</div></li>

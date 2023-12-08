@@ -22,7 +22,7 @@ function App() {
         <Route path="/dashboard/search" element={<><Explore/></>} />
         <Route path="/dashboard/profile" element={<><Profile/></>} />
         <Route path="/dashboard/billing" element={<><Billing/></>} />
-        <Route
+         <Route
           path="/dashboard/repositories/:userid"
           element={<><Reporitories/> </>}
         />
