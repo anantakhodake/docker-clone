@@ -72,9 +72,19 @@
     gap: 5px;
     justify-content: center;
     background-color: blue;
+    position: relative;
+}
+.show-submenu{
+    
+    position: absolute;
+    top:100%;
+    background-color: #ffffff;
+    color: black;
+}
+.dropdown_links{
+    margin-top: 20px;
 }
 .show-submenu.is-visible{
-    display: block;
     width: 180px;
     border: 2px solid black;
     text-align: left;
