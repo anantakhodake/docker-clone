@@ -1,6 +1,8 @@
 import React from "react";
 import "./Billingcards.css";
 import blueFingerprint from "./blueFingerprint.png";
+import { Link } from "react-router-dom";
+
 function Billingcards() {
   return (
     <div className="billingcard_container">
@@ -14,15 +16,22 @@ function Billingcards() {
 
       <div className="b_card2container">
         <div className="b_card2">
-            <h2>Docker Personal</h2>
-            <p>Docker Desktop</p>
-            <p>Unlimited public repositories</p>
-            <p>Docker Engine + Kubernetes</p>
-            <p>Limited image pulls per day</p>
-            <p>Unlimited scoped tokens</p>
+          <h2>Docker Personal</h2>
+          <p>Docker Desktop</p>
+          <p>Unlimited public repositories</p>
+          <p>Docker Engine + Kubernetes</p>
+          <p>Limited image pulls per day</p>
+          <p>Unlimited scoped tokens</p>
         </div>
         <div className="b_card2btn">
-            <button>Buy now</button>
+          <button className="b_card2btn">
+            <Link
+              className={"upgradeui_link"}
+              to={"/dashboard/billing/core/purchase"}
+            >
+              Buy Now
+            </Link>
+          </button>
         </div>
       </div>
     </div>
