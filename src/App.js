@@ -12,6 +12,7 @@ import Dashboardhomepage from "./component/header/dashboard/Dashboardhomepage";
 import Profile from "./component/dashboard/profile/Profile";
 import Explore from "./component/dashboard/explore/Explore"
 import Settings from "./component/dashboard/settings/Settings";
+import Upgradeui from "./component/dashboard/billing/Upgradeui";
 function App() {
   return (
     <BrowserRouter>
@@ -25,7 +26,8 @@ function App() {
         <Route path="/dashboard/profile" element={<><Profile/></>} />
         <Route path="/dashboard/setting" element={<><Settings /></>} />
         <Route path="/dashboard/billing" element={<><Billing/></>} />
-        <Route
+        <Route path="/dashboard/billing/core/purchase" element={<><Upgradeui/></>} />
+         <Route
           path="/dashboard/repositories/:userid"
           element={<><Reporitories/> </>}
         />

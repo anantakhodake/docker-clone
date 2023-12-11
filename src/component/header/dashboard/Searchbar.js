@@ -5,7 +5,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 function Searchbar() {
   return (
       <div className="d_input">
-        <FontAwesomeIcon icon={faMagnifyingGlass} className="dicon" />
+        <FontAwesomeIcon color="#fff" icon={faMagnifyingGlass} className="dicon" />
         <input
           type="text"
           placeholder="Search Docker Hub"

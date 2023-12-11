@@ -79,3 +79,12 @@ border-radius: 4px;
     cursor: pointer;
     background-color: darkblue;
 }
+.upgradeui_link{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(29, 99, 237);
+}
+.upgradeui_link:hover{
+    cursor: pointer;
+    background-color: darkblue;
+}
