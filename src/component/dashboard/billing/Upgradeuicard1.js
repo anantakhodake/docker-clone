@@ -1,36 +1,27 @@
 import React from "react";
 import "./Upgradeuicard1.css";
 
-function Upgradeuicard1() {
+function Upgradeuicard1({ detail, price, features, planName,button }) {
   return (
     <div className="up_cardcontainer">
       <div className="up_card1">
-        <h1>Personal</h1>
-        <p>
-          Includes the Docker essentials and is
-          <br /> ideal for individual developers,
-          <br />
-          education, open source communities,
-          <br /> and small businesses.
-        </p>
+        <h1>{planName}</h1>
+        <p>{detail}</p>
         <div className="up_h1">
-        <h1 className="up_h1">$0</h1>
+          <h1 className="up_h1">{price}</h1>
         </div>
         <div className="up_list">
-        <ul>
-          <li>Docker Desktop</li>
-          <li>Unlimited public repositories</li>
-          <li>
-            Docker Engine + <br />
-            Kubernetes
-          </li>
-          <li>Limited image pulls per day</li>
-          <li>Unlimited scoped tokens</li>
-        </ul>
+          <ul>
+            {features.map((current) => {
+              return <li>{current}</li>;
+            })}
+          </ul>
         </div>
-        <button className="up_button">Continue with Free</button>
+        <div>
+        <button className="up_button">{button}</button>
+        </div>
       </div>
-    </div>
+      </div>
   );
 }
 

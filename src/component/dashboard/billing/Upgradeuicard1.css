@@ -1,14 +1,16 @@
 .up_cardcontainer{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     box-shadow: rgba(57, 63, 73, 0.2) 0px 0px 8px 2px;
     padding: 40px 30px 24px;
     border-radius: 6px;
     width:200px;
+    height:550px;
 
 }
 .up_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid rgb(29, 99, 237);
     padding: 6px 16px;
     color: rgb(29, 99, 237);
@@ -18,6 +20,18 @@
     line-height: 1.75;
     font-size: 1rem;
     margin-top: 30px;
+}
+.up_h1{
+  display: flex;
+}
+.up_card1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.up_list{
+  display: flex;
 }
 .up_card1 h1{
   letter-spacing: 0.02em;
