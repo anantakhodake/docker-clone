@@ -18,6 +18,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import appIcon from "./app-icon.jpg"
+import dockerHub from "./docker-hub.png"
+import dockerContainer from "./docker-container.png"
 
 function Content1() {
   return (
@@ -305,7 +308,7 @@ function Content11() {
       </div>
       <div className="container_11main">
         <div className="container_11">
-          <FontAwesomeIcon className="font" icon={faTree} />
+          <img src={dockerContainer} />
           <h2>Download Docker</h2>
           <p>
             Learn how to install Docker for Mac, Windows, or <br /> Linux and
@@ -318,7 +321,7 @@ function Content11() {
         </div>
 
         <div className="container_11">
-          <FontAwesomeIcon className="font" icon={faTree} />
+           <img src={appIcon} /> 
           <h2>Containerize your first app</h2>
           <p>
             Develop a solid understanding of the Docker basics <br />
@@ -331,7 +334,7 @@ function Content11() {
         </div>
 
         <div className="container_11">
-          <FontAwesomeIcon className="font" icon={faTree} />
+           <img src={dockerHub} />
           <h2>Publish your image on Docker Hub</h2>
           <p>
             Share your application with the world
