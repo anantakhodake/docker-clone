@@ -5,23 +5,19 @@ import { Link } from "react-router-dom";
 import { faArrowRight, faTree } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../header/home/navbar";
-import SignIn from "../signin/signin";
-import SignUp from "../signup/signup";
-// import Footer from "./footer";
-
 import dockerLogo from "../../images/dockerLogo.png";
-
 import aws from "../../images/aws.jpg";
 import azure from "../../images/azure.jpg";
 import green from "../../images/green.jpg";
-
 import content8 from "../../images/content8.jpg";
 import build from "../../images/build.jpg";
 import docker1 from "../../images/docker1.png";
 import homeheroscout from "../../images/homeheroscout.webp";
-import { Dashboard } from "@mui/icons-material";
-import DashboardHeader from "../header/dashboard/DashboardHeader";
-import Profile from "../dashboard/profile/Profile";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function Content1() {
   return (
@@ -227,29 +223,36 @@ function Content9() {
 
 function Content10() {
   return (
-    <div style={{backgroundColor:"black"}} className="container1010">
-      <div style={{backgroundColor:"black"}} className="container10">
-        <h1 style={{backgroundColor:"black"}}>
+    <div style={{ backgroundColor: "black" }} className="container1010">
+      <div style={{ backgroundColor: "black" }} className="container10">
+        <h1 style={{ backgroundColor: "black" }}>
           Develop from code to cloud <br />
           with partners that you trust
         </h1>
-        <p style={{backgroundColor:"black"}}>
+        <p style={{ backgroundColor: "black" }}>
           Our partnerships ensure that your development pipeline network will
           work in your preferred environment —<br />{" "}
-          <p style={{backgroundColor:"black"}}  >whether local or in the cloud.</p>
+          <p style={{ backgroundColor: "black" }}>
+            whether local or in the cloud.
+          </p>
         </p>
-        <div style={{backgroundColor:"black"}} className="a">
-          <a style={{backgroundColor:"black"}} href="">Our Trusted Partners</a>
-          <FontAwesomeIcon style={{backgroundColor:"black"}} icon={faArrowRight} />
+        <div style={{ backgroundColor: "black" }} className="a">
+          <a style={{ backgroundColor: "black" }} href="">
+            Our Trusted Partners
+          </a>
+          <FontAwesomeIcon
+            style={{ backgroundColor: "black" }}
+            icon={faArrowRight}
+          />
         </div>
       </div>
-      <div style={{backgroundColor:"black"}} className="container_10">
-        <div style={{backgroundColor:"black"}} className="aws_container">
-          <div style={{backgroundColor:"black"}} className="awsimg">
-            <h5 style={{backgroundColor:"black"}}>AWS</h5>
-            <img style={{backgroundColor:"black"}} src={aws} alt=""/>
+      <div style={{ backgroundColor: "black" }} className="container_10">
+        <div style={{ backgroundColor: "black" }} className="aws_container">
+          <div style={{ backgroundColor: "black" }} className="awsimg">
+            <h5 style={{ backgroundColor: "black" }}>AWS</h5>
+            <img style={{ backgroundColor: "black" }} src={aws} alt="" />
           </div>
-          <p style={{ color: "white", backgroundColor:"black"  }}>
+          <p style={{ color: "white", backgroundColor: "black" }}>
             Simplify the development of your multi-
             <br />
             container applications from Docker CLI to
@@ -257,22 +260,22 @@ function Content10() {
           </p>
         </div>
 
-        <div  style={{backgroundColor:"black"}}className="aws_container">
-          <div style={{backgroundColor:"black"}} className="awsimg">
-            <img style={{backgroundColor:"black"}} src={azure} alt=""/>
+        <div style={{ backgroundColor: "black" }} className="aws_container">
+          <div style={{ backgroundColor: "black" }} className="awsimg">
+            <img style={{ backgroundColor: "black" }} src={azure} alt="" />
           </div>
-          <p style={{ color: "white", backgroundColor:"black" }}>
+          <p style={{ color: "white", backgroundColor: "black" }}>
             Seamlessly bring container applications from <br />
             your local machine and run them in Azure <br />
             Container Instances.
           </p>
         </div>
 
-        <div style={{backgroundColor:"black"}}  className="aws_container">
-          <div style={{backgroundColor:"black"}}   className="awsimg">
-            <img style={{backgroundColor:"black"}} src={green} />
+        <div style={{ backgroundColor: "black" }} className="aws_container">
+          <div style={{ backgroundColor: "black" }} className="awsimg">
+            <img style={{ backgroundColor: "black" }} src={green} />
           </div>
-          <p style={{ color: "white", backgroundColor:"black"  }}>
+          <p style={{ color: "white", backgroundColor: "black" }}>
             Easily distribute and share Docker images with <br />
             the JFrog Artifactory image repository and <br></br> integrate all
             of your development tools.
@@ -281,7 +284,7 @@ function Content10() {
       </div>
       <center>
         <div>
-          <h2 style={{backgroundColor:"black"}} className="h2__">
+          <h2 style={{ backgroundColor: "black" }} className="h2__">
             Integrate with your favorite tools and images
           </h2>
         </div>
@@ -342,9 +345,11 @@ function Content11() {
       </div>
       <div className="sub_container11main">
         <div className="sub_container11">
-          <div style={{background:"#1d63ed"}}>
-            <h1 style={{background:"#1d63ed"}}>Choose a subscription that’s right for you</h1>
-            <p style={{background:"#1d63ed"}} >
+          <div style={{ background: "#1d63ed" }}>
+            <h1 style={{ background: "#1d63ed" }}>
+              Choose a subscription that’s right for you
+            </h1>
+            <p style={{ background: "#1d63ed" }}>
               Find your perfect balance of collaboration, security, and support
               with a Docker subscription.
             </p>
@@ -505,6 +510,47 @@ function Content12() {
   );
 }
 
+//Footer Component//
+
+function Footer() {
+  return (
+    <div className="footer_container">
+      <div className="footer_icons">
+        <div className="footer_icon">
+          <TwitterIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <LinkedInIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <FacebookIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <InstagramIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <YouTubeIcon className="f_micons" />
+        </div>
+      </div>
+      <div className="footer_links">
+        <p>
+          © 2023 Docker Inc. All rights reserved |
+          <span>
+            <a href="">Terms Of Service |</a>
+          </span>
+          <span>
+            <a href="">Privacy|</a>
+          </span>
+          <span>
+            <a href="">Legal</a>
+          </span>
+        </p>
+      </div>
+      <button className="footer_btn">Cookies Settings</button>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <div>
@@ -521,11 +567,12 @@ function Home() {
         <Content8 />
       </div>
       <Content9 />
-      <div style={{backgroundColor:"black"}}>
+      <div style={{ backgroundColor: "black" }}>
         <Content10 />
       </div>
       <Content11 />
-      <Content12 /> 
+      <Content12 />
+      <Footer />
     </div>
   );
 }
