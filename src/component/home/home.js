@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { faArrowRight, faTree } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faIndent,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../header/home/navbar";
 import dockerLogo from "../../images/dockerLogo.png";
@@ -10,7 +14,6 @@ import aws from "../../images/aws.jpg";
 import azure from "../../images/azure.jpg";
 import green from "../../images/green.jpg";
 import content8 from "../../images/content8.jpg";
-import build from "../../images/build.jpg";
 import docker1 from "../../images/docker1.png";
 import homeheroscout from "../../images/homeheroscout.webp";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -18,9 +21,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import appIcon from "./app-icon.jpg"
-import dockerHub from "./docker-hub.png"
-import dockerContainer from "./docker-container.png"
+import appIcon from "./app-icon.jpg";
+import dockerHub from "./docker-hub.png";
+import dockerContainer from "./docker-container.png";
+import build from "./build.jpg";
+import share from "./share.jpg";
+import run from "./run.png";
+import SystemUpdateAltIcon from "@mui/icons-material/SystemUpdateAlt";
 
 function Content1() {
   return (
@@ -123,46 +130,157 @@ function Content6() {
 }
 
 function Content7() {
-  const [isClick, setIsClick] = useState(false);
+  const [tab, setTab] = useState("build");
+  const tabs = {
+    build: {
+      heading: "Build",
+      subheading1: "Spin up new environments quickly",
+      paragraph1:
+        "Develop your own unique applications with Docker images and create multiple containers using Docker Compose.",
+      subheading2: "Integrate with your existing tools",
+      paragraph2:
+        "Docker works with all development tools such as VS Code, CircleCI, and GitHub.",
+      subheading3: "Containerize applications for consistency",
+      paragraph3:
+        "Run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE, and more.",
+      image: build,
+    },
+    share: {
+      heading: "Share",
+      subheading1: "Build with verified, trusted content",
+      paragraph1:
+        "Visit Docker Hub to browse Docker Trusted Content from our verified publishers or Docker Official Images.",
+      subheading2: "Collaborate with your team",
+      paragraph2:
+        "Pull and publish images from Hub for easy sharing between team members, organizations, or the broader community.",
+      subheading3: "Secure your workspaces",
+      paragraph3:
+        "Ensure best practices with image access management, registry access management, and private repositories.",
+      image: share,
+    },
+    run: {
+      heading: "Run",
+      subheading1: "Consistent application delivery",
+      paragraph1:
+        "Ship your applications knowing they’ll run the same way on any environment, locally or in the cloud.",
+      subheading2: "Develop with versatility",
+      paragraph2:
+        "Deploy applications in isolated containers with multi-language support, reducing conflict between application dependencies.",
+      subheading3: "Deploy with one command",
+      paragraph3:
+        "Work inside the Docker Compose CLI to expedite development and launch your applications with a single command.",
+      image: run,
+    },
+  };
+  function Build({
+    heading,
+    subheading1,
+    subheading2,
+    subheading3,
+    paragraph1,
+    paragraph2,
+    paragraph3,
+    image,
+  }) {
+    return (
+      <div className="build_container">
+        <div className="build_container1">
+          <h1>{heading}</h1>
+          <h3>{subheading1}</h3>
+          <p>{paragraph1}</p>
+          <h3>{subheading2}</h3>
+          <p>{paragraph2}</p>
+          <h3>{subheading3}</h3>
+          <p>{paragraph3}</p>
+        </div>
+        <div className="build_container2">
+          <img src={image} alt="" />
+        </div>
+      </div>
+    );
+  }
   return (
-    <div>
-      <Link
-        onClick={(e) => {
-          setIsClick(!isClick);
-        }}
-        className="build"
-      >
-        Build
-      </Link>
-      <FontAwesomeIcon icon={faRocket} />
-      {isClick && (
-        <div className={`show-build ${isClick ? "is-visible" : ""}`}>
-          <div className="build-container">
-            <div className="build1">
-              <h1>Build</h1>
-              <h3>Spin up new environments quickly</h3>
-              <p>
-                Develop your own unique applications with Docker images and
-                create multiple containers using Docker Compose.
-              </p>
-              <h3>Integrate with your existing tools</h3>
-              <p>
-                Docker works with all development tools such as VS Code,
-                CircleCI, and GitHub.
-              </p>
-              <h3>Containerize applications for consistency</h3>
-              <p>
-                Run in any environment consistently from on-premises Kubernetes
-                to AWS ECS,
-                <br /> Azure ACI, Google GKE, and more.
-              </p>
-              <div className="build2">
-                <img src={build} alt="" />
-              </div>
-            </div>
+    <div className="content7_container">
+      <div className="content7_links">
+        <div className="content7_link">
+          <div className="content7_btn">
+            <button
+              className={` ${tab === "build" ? "active" : ""}`}
+              onClick={() => setTab("build")}
+            >
+              <FontAwesomeIcon icon={faIndent} />
+              Build
+            </button>
+          </div>
+          <div className="content7_btn">
+            <button
+              className={`${tab === "share" ? "active" : ""}`}
+              onClick={() => setTab("share")}
+            >
+              <FontAwesomeIcon
+                icon={faUserGroup}
+                style={{ color: "#0b214a" }}
+              />
+              Share
+            </button>
+          </div>
+          <div className="content7_btn">
+            <button
+              className={` ${tab === "run" ? "active" : ""}`}
+              onClick={() => setTab("run")}
+            >
+              <SystemUpdateAltIcon />
+              Run
+            </button>
           </div>
         </div>
-      )}
+      </div>
+      <Build
+            heading={tabs[tab].heading}
+            subheading1={tabs[tab].subheading1}
+            paragraph1={tabs[tab].paragraph1}
+            subheading2={tabs[tab].subheading2}
+            paragraph2={tabs[tab].paragraph2}
+            subheading3={tabs[tab].subheading3}
+            paragraph3={tabs[tab].paragraph3}
+            image={tabs[tab].image}
+          />
+      {/* {tab === "build" ? (
+        <Build
+          heading={tabs.build.heading}
+          subheading1={tabs.build.subheading1}
+          paragraph1={tabs.build.paragraph1}
+          subheading2={tabs.build.subheading2}
+          paragraph2={tabs.build.paragraph2}
+          subheading3={tabs.build.subheading3}
+          paragraph3={tabs.build.paragraph3}
+          image={tabs.build.image}
+        />
+      ) : tab === "share" ? (
+        <Build
+          heading={tabs.share.heading}
+          subheading1={tabs.share.subheading1}
+          paragraph1={tabs.share.paragraph1}
+          subheading2={tabs.share.subheading2}
+          paragraph2={tabs.share.paragraph2}
+          subheading3={tabs.share.subheading3}
+          paragraph3={tabs.share.paragraph3}
+          image={tabs.share.image}
+        />
+      ) : tab === "run" ? (
+        <Build
+          heading={tabs.run.heading}
+          subheading1={tabs.run.subheading1}
+          paragraph1={tabs.run.paragraph1}
+          subheading2={tabs.run.subheading2}
+          paragraph2={tabs.run.paragraph2}
+          subheading3={tabs.run.subheading3}
+          paragraph3={tabs.run.paragraph3}
+          image={tabs.run.image}
+        />
+      ) : (
+        "build"
+      )} */}
     </div>
   );
 }
@@ -321,7 +439,7 @@ function Content11() {
         </div>
 
         <div className="container_11">
-           <img src={appIcon} /> 
+          <img src={appIcon} />
           <h2>Containerize your first app</h2>
           <p>
             Develop a solid understanding of the Docker basics <br />
@@ -334,7 +452,7 @@ function Content11() {
         </div>
 
         <div className="container_11">
-           <img src={dockerHub} />
+          <img src={dockerHub} />
           <h2>Publish your image on Docker Hub</h2>
           <p>
             Share your application with the world
@@ -566,6 +684,7 @@ function Home() {
         <Content5 />
       </div>
       <Content6 />
+      <Content7 />
       <div style={{ backgroundColor: "#f5fafe" }}>
         <Content8 />
       </div>
