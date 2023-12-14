@@ -51,10 +51,10 @@ function DashboardHeader() {
           {isHovered && (
             <ul className={`show-submenu ${isHovered ? "is-visible" : ""}`}>
                 <Link className="dropdown_links">Whats New</Link><br/><br/>
-                <Link to={"/dashboard/profile"}>My Profile</Link><br/><br/>
-                <Link>My Account</Link><br/><br/>
-                <Link to={"/dashboard/billing"}>Billing</Link><br/><br/>
-                <Link to={"/home"}>Sign Out</Link>
+                <Link className="dropdown_links" to={"/dashboard/profile"}>My Profile</Link><br/><br/>
+                <Link className="dropdown_links">My Account</Link><br/><br/>
+                <Link className="dropdown_links" to={"/dashboard/billing"}>Billing</Link><br/><br/>
+                <Link className="dropdown_links" to={"/home"}>Sign Out</Link>
             </ul>
           )}
         </div>

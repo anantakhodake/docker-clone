@@ -84,6 +84,7 @@
 .dropdown_links{
     margin-top: 20px;
     text-decoration: none;
+    background-color: white;
 }
 .show-submenu.is-visible{
     width: 180px;
@@ -92,10 +93,12 @@
     align-items: left;
     gap:10px;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid #c9cace;
     text-align: left;
     opacity: 1;
     padding:10px;
+    margin-top:16px;
+    border-radius: 4px;
 }
 .show-submenu li a {
     color:rgb(81, 79, 79);
