@@ -26,7 +26,7 @@ function App() {
         <Route path="/dashboard/profile" element={<><Profile/></>} />
         <Route path="/dashboard/setting" element={<><Settings /></>} />
         <Route path="/dashboard/billing" element={<><Billing/></>} />
-        <Route path="/dashboard/billing/core/purchase" element={<><Upgradeui/></>} />
+        <Route path="/dashboard/billing/core/purchase" element={<Upgradeui/>} />
          <Route
           path="/dashboard/repositories/:userid"
           element={<><Reporitories/> </>}
