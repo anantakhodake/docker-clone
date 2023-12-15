@@ -1,105 +1,97 @@
-*{
-    font-family: sans-serif;
-    padding: 0px;
-    margin: 0px;
-    
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.navcontainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-.navmain1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navmain1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.navheader{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: black;
+.navheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  width: 100%;
 }
 
-.navheader li h2{
-    color: blue;
-    font-size:25px;
+.navheader li h2 {
+  color: blue;
+  font-size: 25px;
 }
-.navheader li{
-    display:flex;
-    padding: 5px;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 35px;
-    font-weight: 600;
-}
-
-.navbtn{
-    display: flex;
-    margin-left: 360px;
-    border: none;
-}
-.glass{
-    margin-right: 10px;
-}
-.navfirst{
-    display: flex;
-    align-items: center;
-}
-.navfirst button{
-    text-decoration: none;
-    
-}
-  .navbtn .navbtn1{
-    background-color: blue;
-    color: white;
-    border: 2px solid blue;
-    border-radius: 5px;
-    
-}
-.navlinks{
-    text-decoration: none;
-}
-.navbtn .navbtn1:hover{
-    background-color: darkblue;
-    border: none;
-}
-.navbtn button{
-    background-color: transparent;
-    border: 2px solid gray;
-    font-size: 16px;
-    padding: 10px;
-    margin-right: 10px;
-    font-weight:600 ;
-    height: 48px;
-    width: 120px;
-    border-radius: 5px;
-}
-.navbtn button:hover{
-    background-color:#abb8c3;
-}
-.developer-menu{
-    position: relative;
+.navheader li {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 35px;
+  font-weight: 600;
 }
 
-.show-submenu{
-    display: none;
-    position: absolute;
-    top:100%;
-    left: 0;
-    background-color: #ffffff;
-    color: black;
+.navbtn {
+  display: flex;
+  border: none;
+  gap: 20px;
 }
-.show-submenu.is-visible{
-    display: block;
-    width: 180px;
-    border: 2px solid black;
-    text-align: left;
-    opacity: 1;
+.glass {
+  margin-right: 10px;
+}
+.navfirst {
+  display: flex;
+  align-items: center;
+}
+.navfirst button {
+  text-decoration: none;
+}
+.navbtn .navbtn1 {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+.navlinks {
+  text-decoration: none;
+}
+.navbtn .navbtn1:hover {
+  background-color: darkblue;
+  border: none;
+}
+.navbtn button {
+  background-color: transparent;
+  border: 2px solid gray;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 600;
+  height: 48px;
+  border-radius: 5px;
+}
+.navbtn button:hover {
+  background-color: #abb8c3;
+}
+.developer-menu {
+  position: relative;
+}
+
+.show-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: black;
+}
+.show-submenu.is-visible {
+  display: block;
+  width: 180px;
+  border: 2px solid black;
+  text-align: left;
+  opacity: 1;
 }
 .show-submenu li a {
-    color:rgb(81, 79, 79);
-    text-align:center;
+  color: rgb(81, 79, 79);
+  text-align: center;
 }
