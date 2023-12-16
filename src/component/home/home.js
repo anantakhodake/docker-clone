@@ -245,42 +245,6 @@ function Content7() {
             paragraph3={tabs[tab].paragraph3}
             image={tabs[tab].image}
           />
-      {/* {tab === "build" ? (
-        <Build
-          heading={tabs.build.heading}
-          subheading1={tabs.build.subheading1}
-          paragraph1={tabs.build.paragraph1}
-          subheading2={tabs.build.subheading2}
-          paragraph2={tabs.build.paragraph2}
-          subheading3={tabs.build.subheading3}
-          paragraph3={tabs.build.paragraph3}
-          image={tabs.build.image}
-        />
-      ) : tab === "share" ? (
-        <Build
-          heading={tabs.share.heading}
-          subheading1={tabs.share.subheading1}
-          paragraph1={tabs.share.paragraph1}
-          subheading2={tabs.share.subheading2}
-          paragraph2={tabs.share.paragraph2}
-          subheading3={tabs.share.subheading3}
-          paragraph3={tabs.share.paragraph3}
-          image={tabs.share.image}
-        />
-      ) : tab === "run" ? (
-        <Build
-          heading={tabs.run.heading}
-          subheading1={tabs.run.subheading1}
-          paragraph1={tabs.run.paragraph1}
-          subheading2={tabs.run.subheading2}
-          paragraph2={tabs.run.paragraph2}
-          subheading3={tabs.run.subheading3}
-          paragraph3={tabs.run.paragraph3}
-          image={tabs.run.image}
-        />
-      ) : (
-        "build"
-      )} */}
     </div>
   );
 }
@@ -299,7 +263,7 @@ function Content8() {
         </p>
         <div className="a">
           <a href="">Read the container guide</a>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon className="right_arrow" icon={faArrowRight} />
         </div>
       </div>
       <div className="img1">
@@ -324,7 +288,7 @@ function Content9() {
         </p>
         <div className="a">
           <a>Connect with us</a>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon className="right_arrow" icon={faArrowRight} />
         </div>
         <div className="sub_container9">
           <h4>Join our open source program</h4>
@@ -334,7 +298,7 @@ function Content9() {
           </p>
           <div className="a">
             <a>Apply today</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon className="right_arrow" icon={faArrowRight} />
           </div>
         </div>
       </div>

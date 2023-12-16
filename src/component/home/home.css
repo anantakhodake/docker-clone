@@ -331,6 +331,10 @@
 .sub_container9 p {
   margin-top: 10px;
 }
+.right_arrow{
+  color: blue;
+  padding-right: 5px;
+}
 
 /* content -10 */
 
@@ -762,5 +766,17 @@ p {
   padding: 5px;
   padding-left: 35px;
   font-weight: 600;
+}
+.sub_container9 h4{
+  font-size: 20px;
+  color: #0b214a;
+  font-weight:700;
+  letter-spacing: 0;
+  line-height: 1.1em;
+}
+.sub_container9 p{
+  color: #677285 !important;
+  line-height: 1em;
+  font-weight: 400;
 }
 }
