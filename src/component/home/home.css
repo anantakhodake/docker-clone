@@ -638,9 +638,19 @@ p {
   color: white;
   cursor: pointer;
 }
-/* mobile view css  */
+/* mobile view css for responsive website of docker clone */
 
 @media(max-width:412px){
+
+  /* content1 */
+  .main h3{
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* content2 */
+  
   .container .img {
     width: 100%;
     height: 100%;
