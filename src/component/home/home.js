@@ -398,7 +398,7 @@ function Content11() {
           </p>
           <div className="a">
             <a href="">Get Started</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight} className="right_arrow" />
           </div>
         </div>
 
@@ -411,7 +411,7 @@ function Content11() {
           </p>
           <div className="a">
             <a href="">Learn Docker</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight}  className="right_arrow"  />
           </div>
         </div>
 
@@ -424,7 +424,7 @@ function Content11() {
           </p>
           <div className="a">
             <a href="">Sign up for free</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight}  className="right_arrow" />
           </div>
         </div>
       </div>
