@@ -2,26 +2,32 @@ import React, { useState } from "react";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { faArrowRight, faTree } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faIndent,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../header/home/navbar";
-import SignIn from "../signin/signin";
-import SignUp from "../signup/signup";
-// import Footer from "./footer";
-
 import dockerLogo from "../../images/dockerLogo.png";
-
 import aws from "../../images/aws.jpg";
 import azure from "../../images/azure.jpg";
 import green from "../../images/green.jpg";
-
 import content8 from "../../images/content8.jpg";
-import build from "../../images/build.jpg";
 import docker1 from "../../images/docker1.png";
 import homeheroscout from "../../images/homeheroscout.webp";
-import { Dashboard } from "@mui/icons-material";
-import DashboardHeader from "../header/dashboard/DashboardHeader";
-import Profile from "../dashboard/profile/Profile";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import appIcon from "./app-icon.jpg";
+import dockerHub from "./docker-hub.png";
+import dockerContainer from "./docker-container.png";
+import build from "./build.jpg";
+import share from "./share.jpg";
+import run from "./run.png";
+import SystemUpdateAltIcon from "@mui/icons-material/SystemUpdateAlt";
 
 function Content1() {
   return (
@@ -124,46 +130,121 @@ function Content6() {
 }
 
 function Content7() {
-  const [isClick, setIsClick] = useState(false);
+  const [tab, setTab] = useState("build");
+  const tabs = {
+    build: {
+      heading: "Build",
+      subheading1: "Spin up new environments quickly",
+      paragraph1:
+        "Develop your own unique applications with Docker images and create multiple containers using Docker Compose.",
+      subheading2: "Integrate with your existing tools",
+      paragraph2:
+        "Docker works with all development tools such as VS Code, CircleCI, and GitHub.",
+      subheading3: "Containerize applications for consistency",
+      paragraph3:
+        "Run in any environment consistently from on-premises Kubernetes to AWS ECS, Azure ACI, Google GKE, and more.",
+      image: build,
+    },
+    share: {
+      heading: "Share",
+      subheading1: "Build with verified, trusted content",
+      paragraph1:
+        "Visit Docker Hub to browse Docker Trusted Content from our verified publishers or Docker Official Images.",
+      subheading2: "Collaborate with your team",
+      paragraph2:
+        "Pull and publish images from Hub for easy sharing between team members, organizations, or the broader community.",
+      subheading3: "Secure your workspaces",
+      paragraph3:
+        "Ensure best practices with image access management, registry access management, and private repositories.",
+      image: share,
+    },
+    run: {
+      heading: "Run",
+      subheading1: "Consistent application delivery",
+      paragraph1:
+        "Ship your applications knowing they’ll run the same way on any environment, locally or in the cloud.",
+      subheading2: "Develop with versatility",
+      paragraph2:
+        "Deploy applications in isolated containers with multi-language support, reducing conflict between application dependencies.",
+      subheading3: "Deploy with one command",
+      paragraph3:
+        "Work inside the Docker Compose CLI to expedite development and launch your applications with a single command.",
+      image: run,
+    },
+  };
+  function Build({
+    heading,
+    subheading1,
+    subheading2,
+    subheading3,
+    paragraph1,
+    paragraph2,
+    paragraph3,
+    image,
+  }) {
+    return (
+      <div className="build_container">
+        <div className="build_container1">
+          <h1>{heading}</h1>
+          <h3>{subheading1}</h3>
+          <p>{paragraph1}</p>
+          <h3>{subheading2}</h3>
+          <p>{paragraph2}</p>
+          <h3>{subheading3}</h3>
+          <p>{paragraph3}</p>
+        </div>
+        <div className="build_container2">
+          <img src={image} alt="" />
+        </div>
+      </div>
+    );
+  }
   return (
-    <div>
-      <Link
-        onClick={(e) => {
-          setIsClick(!isClick);
-        }}
-        className="build"
-      >
-        Build
-      </Link>
-      <FontAwesomeIcon icon={faRocket} />
-      {isClick && (
-        <div className={`show-build ${isClick ? "is-visible" : ""}`}>
-          <div className="build-container">
-            <div className="build1">
-              <h1>Build</h1>
-              <h3>Spin up new environments quickly</h3>
-              <p>
-                Develop your own unique applications with Docker images and
-                create multiple containers using Docker Compose.
-              </p>
-              <h3>Integrate with your existing tools</h3>
-              <p>
-                Docker works with all development tools such as VS Code,
-                CircleCI, and GitHub.
-              </p>
-              <h3>Containerize applications for consistency</h3>
-              <p>
-                Run in any environment consistently from on-premises Kubernetes
-                to AWS ECS,
-                <br /> Azure ACI, Google GKE, and more.
-              </p>
-              <div className="build2">
-                <img src={build} alt="" />
-              </div>
-            </div>
+    <div className="content7_container">
+      <div className="content7_links">
+        <div className="content7_link">
+          <div className="content7_btn">
+            <button
+              className={` ${tab === "build" ? "active" : ""}`}
+              onClick={() => setTab("build")}
+            >
+              <FontAwesomeIcon icon={faIndent} />
+              Build
+            </button>
+          </div>
+          <div className="content7_btn">
+            <button
+              className={`${tab === "share" ? "active" : ""}`}
+              onClick={() => setTab("share")}
+            >
+              <FontAwesomeIcon
+                icon={faUserGroup}
+                style={{ color: "#0b214a" }}
+              />
+              Share
+            </button>
+          </div>
+          <div className="content7_btn">
+            <button
+              className={` ${tab === "run" ? "active" : ""}`}
+              onClick={() => setTab("run")}
+            >
+              <SystemUpdateAltIcon />
+              Run
+            </button>
           </div>
         </div>
-      )}
+      </div>
+      <Build
+            heading={tabs[tab].heading}
+            subheading1={tabs[tab].subheading1}
+            paragraph1={tabs[tab].paragraph1}
+            subheading2={tabs[tab].subheading2}
+            paragraph2={tabs[tab].paragraph2}
+            subheading3={tabs[tab].subheading3}
+            paragraph3={tabs[tab].paragraph3}
+            image={tabs[tab].image}
+          />
     </div>
   );
 }
@@ -182,7 +263,7 @@ function Content8() {
         </p>
         <div className="a">
           <a href="">Read the container guide</a>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon className="right_arrow" icon={faArrowRight} />
         </div>
       </div>
       <div className="img1">
@@ -207,7 +288,7 @@ function Content9() {
         </p>
         <div className="a">
           <a>Connect with us</a>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon className="right_arrow" icon={faArrowRight} />
         </div>
         <div className="sub_container9">
           <h4>Join our open source program</h4>
@@ -217,7 +298,7 @@ function Content9() {
           </p>
           <div className="a">
             <a>Apply today</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon className="right_arrow" icon={faArrowRight} />
           </div>
         </div>
       </div>
@@ -227,29 +308,36 @@ function Content9() {
 
 function Content10() {
   return (
-    <div style={{backgroundColor:"black"}} className="container1010">
-      <div style={{backgroundColor:"black"}} className="container10">
-        <h1 style={{backgroundColor:"black"}}>
+    <div style={{ backgroundColor: "black" }} className="container1010">
+      <div style={{ backgroundColor: "black" }} className="container10">
+        <h1 style={{ backgroundColor: "black" }}>
           Develop from code to cloud <br />
           with partners that you trust
         </h1>
-        <p style={{backgroundColor:"black"}}>
+        <p style={{ backgroundColor: "black" }}>
           Our partnerships ensure that your development pipeline network will
           work in your preferred environment —<br />{" "}
-          <p style={{backgroundColor:"black"}}  >whether local or in the cloud.</p>
+          <p style={{ backgroundColor: "black" }}>
+            whether local or in the cloud.
+          </p>
         </p>
-        <div style={{backgroundColor:"black"}} className="a">
-          <a style={{backgroundColor:"black"}} href="">Our Trusted Partners</a>
-          <FontAwesomeIcon style={{backgroundColor:"black"}} icon={faArrowRight} />
+        <div style={{ backgroundColor: "black" }} className="a">
+          <a style={{ backgroundColor: "black" }} href="">
+            Our Trusted Partners
+          </a>
+          <FontAwesomeIcon
+            style={{ backgroundColor: "black" }}
+            icon={faArrowRight}
+          />
         </div>
       </div>
-      <div style={{backgroundColor:"black"}} className="container_10">
-        <div style={{backgroundColor:"black"}} className="aws_container">
-          <div style={{backgroundColor:"black"}} className="awsimg">
-            <h5 style={{backgroundColor:"black"}}>AWS</h5>
-            <img style={{backgroundColor:"black"}} src={aws} alt=""/>
+      <div style={{ backgroundColor: "black" }} className="container_10">
+        <div style={{ backgroundColor: "black" }} className="aws_container">
+          <div style={{ backgroundColor: "black" }} className="awsimg">
+            <h5 style={{ backgroundColor: "black" }}>AWS</h5>
+            <img style={{ backgroundColor: "black" }} src={aws} alt="" />
           </div>
-          <p style={{ color: "white", backgroundColor:"black"  }}>
+          <p style={{ color: "white", backgroundColor: "black" }}>
             Simplify the development of your multi-
             <br />
             container applications from Docker CLI to
@@ -257,22 +345,22 @@ function Content10() {
           </p>
         </div>
 
-        <div  style={{backgroundColor:"black"}}className="aws_container">
-          <div style={{backgroundColor:"black"}} className="awsimg">
-            <img style={{backgroundColor:"black"}} src={azure} alt=""/>
+        <div style={{ backgroundColor: "black" }} className="aws_container">
+          <div style={{ backgroundColor: "black" }} className="awsimg">
+            <img style={{ backgroundColor: "black" }} src={azure} alt="" />
           </div>
-          <p style={{ color: "white", backgroundColor:"black" }}>
+          <p style={{ color: "white", backgroundColor: "black" }}>
             Seamlessly bring container applications from <br />
             your local machine and run them in Azure <br />
             Container Instances.
           </p>
         </div>
 
-        <div style={{backgroundColor:"black"}}  className="aws_container">
-          <div style={{backgroundColor:"black"}}   className="awsimg">
-            <img style={{backgroundColor:"black"}} src={green} />
+        <div style={{ backgroundColor: "black" }} className="aws_container">
+          <div style={{ backgroundColor: "black" }} className="awsimg">
+            <img style={{ backgroundColor: "black" }} src={green} />
           </div>
-          <p style={{ color: "white", backgroundColor:"black"  }}>
+          <p style={{ color: "white", backgroundColor: "black" }}>
             Easily distribute and share Docker images with <br />
             the JFrog Artifactory image repository and <br></br> integrate all
             of your development tools.
@@ -281,7 +369,7 @@ function Content10() {
       </div>
       <center>
         <div>
-          <h2 style={{backgroundColor:"black"}} className="h2__">
+          <h2 style={{ backgroundColor: "black" }} className="h2__">
             Integrate with your favorite tools and images
           </h2>
         </div>
@@ -302,7 +390,7 @@ function Content11() {
       </div>
       <div className="container_11main">
         <div className="container_11">
-          <FontAwesomeIcon className="font" icon={faTree} />
+          <img src={dockerContainer} />
           <h2>Download Docker</h2>
           <p>
             Learn how to install Docker for Mac, Windows, or <br /> Linux and
@@ -310,12 +398,12 @@ function Content11() {
           </p>
           <div className="a">
             <a href="">Get Started</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight} className="right_arrow" />
           </div>
         </div>
 
         <div className="container_11">
-          <FontAwesomeIcon className="font" icon={faTree} />
+          <img src={appIcon} />
           <h2>Containerize your first app</h2>
           <p>
             Develop a solid understanding of the Docker basics <br />
@@ -323,12 +411,12 @@ function Content11() {
           </p>
           <div className="a">
             <a href="">Learn Docker</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight}  className="right_arrow"  />
           </div>
         </div>
 
         <div className="container_11">
-          <FontAwesomeIcon className="font" icon={faTree} />
+          <img src={dockerHub} />
           <h2>Publish your image on Docker Hub</h2>
           <p>
             Share your application with the world
@@ -336,15 +424,17 @@ function Content11() {
           </p>
           <div className="a">
             <a href="">Sign up for free</a>
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faArrowRight}  className="right_arrow" />
           </div>
         </div>
       </div>
       <div className="sub_container11main">
         <div className="sub_container11">
-          <div style={{background:"#1d63ed"}}>
-            <h1 style={{background:"#1d63ed"}}>Choose a subscription that’s right for you</h1>
-            <p style={{background:"#1d63ed"}} >
+          <div style={{ background: "#1d63ed" }}>
+            <h1 style={{ background: "#1d63ed" }}>
+              Choose a subscription that’s right for you
+            </h1>
+            <p style={{ background: "#1d63ed" }}>
               Find your perfect balance of collaboration, security, and support
               with a Docker subscription.
             </p>
@@ -505,6 +595,47 @@ function Content12() {
   );
 }
 
+//Footer Component//
+
+function Footer() {
+  return (
+    <div className="footer_container">
+      <div className="footer_icons">
+        <div className="footer_icon">
+          <TwitterIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <LinkedInIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <FacebookIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <InstagramIcon className="f_micons" />
+        </div>
+        <div className="footer_icon">
+          <YouTubeIcon className="f_micons" />
+        </div>
+      </div>
+      <div className="footer_links">
+        <p>
+          © 2023 Docker Inc. All rights reserved |
+          <span>
+            <a href="">Terms Of Service |</a>
+          </span>
+          <span>
+            <a href="">Privacy|</a>
+          </span>
+          <span>
+            <a href="">Legal</a>
+          </span>
+        </p>
+      </div>
+      <button className="footer_btn">Cookies Settings</button>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <div>
@@ -517,15 +648,17 @@ function Home() {
         <Content5 />
       </div>
       <Content6 />
+      <Content7 />
       <div style={{ backgroundColor: "#f5fafe" }}>
         <Content8 />
       </div>
       <Content9 />
-      <div style={{backgroundColor:"black"}}>
+      <div style={{ backgroundColor: "black" }}>
         <Content10 />
       </div>
       <Content11 />
-      <Content12 /> 
+      <Content12 />
+      <Footer />
     </div>
   );
 }

@@ -29,10 +29,6 @@ function DashboardHeader() {
             Organization
           </Link>
           <Link className="dashboard_links">Help</Link>
-          <Link to={"/dashboard/billing"} className="dashboard_links">
-            Billing
-          </Link>
-          <Link to={"/dashboard/setting"} className="dashboard_links"> Account Settings</Link>
         </div>
       </div>
       <div className="dashboard_buttons">
@@ -50,11 +46,27 @@ function DashboardHeader() {
           </button>
           {isHovered && (
             <ul className={`show-submenu ${isHovered ? "is-visible" : ""}`}>
-                <Link className="dropdown_links">Whats New</Link><br/><br/>
-                <Link to={"/dashboard/profile"}>My Profile</Link><br/><br/>
-                <Link>My Account</Link><br/><br/>
-                <Link to={"/dashboard/billing"}>Billing</Link><br/><br/>
-                <Link to={"/home"}>Sign Out</Link>
+              <Link className="dropdown_links">Whats New</Link>
+              <br />
+              <br />
+              <Link className="dropdown_links" to={"/dashboard/profile"}>
+                My Profile
+              </Link>
+              <br />
+              <br />
+              <Link className="dropdown_links" to={"/dashboard/setting"}>
+                My Account
+              </Link>
+              <br />
+              <br />
+              <Link className="dropdown_links" to={"/dashboard/billing"}>
+                Billing
+              </Link>
+              <br />
+              <br />
+              <Link className="dropdown_links" to={"/home"}>
+                Sign Out
+              </Link>
             </ul>
           )}
         </div>

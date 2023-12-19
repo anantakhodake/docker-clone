@@ -10,7 +10,6 @@
 .tabs_heading button {
   font-size: 1rem;
   text-shadow: currentcolor 0.5px 0px 0px;
-
   padding: 4px 8px;
   letter-spacing: 0.02em;
   border: none;
@@ -71,4 +70,21 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+/* mobile view css */
+
+@media(max-width:412px){
+  .tab_content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+  }
+.repository_tabscard{
+  height: 100%;
+  width: 100%;
+}
+
 }

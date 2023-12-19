@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   faAngleDown,
+  faBars,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-import dockerLogo from "../../../images/dockerLogo.png";
+import DockeraLogo from "../../../images/dockerLogo.png";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className="navcontainer">
-      <div className="navmain1">
         <ul className="navheader">
-          <img src={dockerLogo}  alt=""/>
+          <img src={DockeraLogo}  alt=""/>
           <li>
-            <Link className="navlinks">Products</Link>
+            <a href="" className="navlinks">Products</a>
             <FontAwesomeIcon icon={faAngleDown} />
           </li>
           <li
@@ -24,32 +26,32 @@ function Navbar() {
           }}
            className="developer-menu"
           >
-            <Link className="navlinks">Developers</Link>
+            <a href="" className="navlinks">Developers</a>
             <FontAwesomeIcon icon={faAngleDown} />
             {isHovered && (
               <ul  className={`show-submenu ${isHovered ? "is-visible":""}`}>
                 <li><div>Developers</div></li>
-                <li><a>Docs</a></li>
-                <li><a>Getting Started</a></li>
-                <li><a>Extension SDK</a></li>
-                <li><a>Community</a></li>
-                <li><a>Preview Program</a></li>
-                <li><a>Open Source</a></li>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Getting Started</a></li>
+                <li><a href="">Extension SDK</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Preview Program</a></li>
+                <li><a href="">Open Source</a></li>
               </ul>
             )}
           </li>
           <li>
-            <Link className="navlinks">Pricing</Link>
+            <a href="" className="navlinks">Pricing</a>
           </li>
           <li>
-            <Link className="navlinks">Blog</Link>
+            <a href="" className="navlinks">Blog</a>
           </li>
           <li>
-            <Link className="navlinks">About</Link>
+            <a href="" className="navlinks">About</a>
             <FontAwesomeIcon icon={faAngleDown} />
           </li>
           <li>
-            <Link className="navlinks">Partners</Link>
+            <a href="" className="navlinks">Partners</a>
           </li>
           <div className="navbtn">
             <Link className="navlinks" to={"/signin"}>
@@ -61,10 +63,20 @@ function Navbar() {
             <div>
               <button className="navbtn1">Get started</button>
             </div>
+            <div className="mobile_btn">
+              <FontAwesomeIcon icon={faBars} onClick={(e)=>{
+                
+              }} className="mobile_icon" />
+            </div>
           </div>
         </ul>
+        <ul className={`mobile-menu ${toggleMenu ? "open-menu":"close-menu"}`}>
+          <li className="mobile-menu-item">one</li>
+          <li className="mobile-menu-item">one</li>
+          <li className="mobile-menu-item">one</li>
+          <li className="mobile-menu-item">one</li>
+          </ul>
       </div>
-    </div>
   );
 }
 export default Navbar;

@@ -75,3 +75,13 @@
     align-items: center;
     gap: 5px;
 }
+
+/* mobile responsive */
+
+@media(max-width:412px){
+   .rsub_homepagecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   } 
+}
