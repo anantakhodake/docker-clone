@@ -103,7 +103,7 @@
 
 /* mobile view css */
 
-@media(max-width:412px){
+@media(max-width:512px){
 
     .d_homepagecontainer{
         display: flex;
@@ -116,4 +116,7 @@
     flex-direction: column;
    } 
 
+   .homepage_2{
+    padding: 20px;
+   }
 }

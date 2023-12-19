@@ -34,3 +34,14 @@
     align-items: center;
     justify-content: center;
 }
+
+/* mobile view */
+
+@media(max-Width:512px){
+
+    .Explore_main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    }
