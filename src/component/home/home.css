@@ -512,10 +512,7 @@ p {
   text-align: left;
   font-size: 20px;
 }
-.sub_container11main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sub_container11main {  
   margin-top: 8%;
 }
 .container11btn {
@@ -855,6 +852,42 @@ padding-top: 10px;
   font-size: 90%;
 }
 .sub_container11{
-  
+  display: flex;
+  flex-direction: column;
 }
+.sub_container11 h1{
+  font-size: 32px;
+  text-align: left;
+}
+.sub_container11 p{
+  text-align: left;
+}
+
+/* content 12 */
+  .container12main{
+    display: flex;
+    flex-direction: column;
+    padding-left:30px;
+    
+  }
+  .sub_container12second li a{
+    color: #677285;
+  }
+  .P{
+    color: black;
+  }
+
+  /* footer */
+  
+  .footer_container{
+    display: flex;
+    align-items:left;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.footer_links{
+  margin-left: 30px;
+}
+
 }
