@@ -33,7 +33,7 @@ function Content1() {
   return (
     <center>
       <div className="main">
-        <h1>Make better, secure software from the start</h1>
+        <h1>Make better, secure<br/> software from the start</h1>
         <h3>Announcing Docker Scout general availability.</h3>
         <button>Learn About Docker Scout</button>
       </div>
