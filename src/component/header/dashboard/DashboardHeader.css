@@ -36,6 +36,9 @@
 }
 .d_links{
     background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .dashboard_buttons{
     display: flex;
@@ -115,4 +118,27 @@
     color: white;
     font-size: 16px;
     font-weight: bold;
+}
+.dashboard_mobileicon{
+    display: none;
+}
+
+
+/* Responsive css for mobile view */
+
+@media(max-width:980px){
+    .d_container{
+        display: block;
+        /* position: fixed; */
+    }
+
+    .d_links{
+        display: none;
+    }
+    .dashboard_buttons{
+        display: none;
+    }
+    .dashboard_mobileicon{
+        display: block;
+    }
 }

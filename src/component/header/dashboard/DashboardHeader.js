@@ -4,6 +4,8 @@ import "./DashboardHeader.css";
 import { Link } from "react-router-dom";
 import blueFingerprint from "./blueFingerprint.png";
 import Dashboardhomepage from "./Dashboardhomepage";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 function DashboardHeader() {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -33,7 +35,6 @@ function DashboardHeader() {
       </div>
       <div className="dashboard_buttons">
         <button className="d_btn1">Upgrade</button>
-        {/* <button className="d_btn1">Ananta </button> */}
         <div className="d_btn2">
           <img className="fingerprint_image" src={blueFingerprint} alt="" />
           <button
@@ -44,6 +45,10 @@ function DashboardHeader() {
           >
             <Link className="dh_link">bajarang45</Link>
           </button>
+
+          <div className="dashboard_mobileicon">
+            <FontAwesomeIcon icon={faBars} fontSize="26px" color="white" />
+          </div>
           {isHovered && (
             <ul className={`show-submenu ${isHovered ? "is-visible" : ""}`}>
               <Link className="dropdown_links">Whats New</Link>

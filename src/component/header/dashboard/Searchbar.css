@@ -31,3 +31,11 @@
     color: white;
     padding: 3px;
 }
+
+/* Responsive css for mobile application */
+
+@media(max-width:980px){
+  .d_input{
+    display: none;
+  }
+}
