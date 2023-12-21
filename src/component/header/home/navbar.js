@@ -12,14 +12,12 @@ function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="nav_container">
-      {/* image part in navbar */}
-      <div className="nav_img">
-        <img src={DockeraLogo} alt="" />
-      </div>
-      {/* menu in navbar */}
-      <div className="navbar_menu">
-        <ul>
+    <>
+      <nav className="nav_container">
+        {/* image part in navbar */}
+        <img src={DockeraLogo} alt="docker image" />
+        {/* menu in navbar */}
+        <ul className="navbar_menu">
           <li>
             <a href="">Product</a>
             <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
@@ -41,30 +39,27 @@ function Navbar() {
           <li>
             <a href="">Partners</a>
           </li>
+          <li>
+            <a href="">
+              <button className="action-btn">Sign In</button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button className="action-btn">Get Started</button>
+            </a>
+          </li>
         </ul>
-      </div>
-      {/* navbar buttons  */}
-      <div className="navbar_buttons">
-        <div className="desktop_menu">
-          <div className="glass">
-            <FontAwesomeIcon fontSize="15px" icon={faMagnifyingGlass} />
-            <Link to={"/signin"}>
-              <button className="nav_btn1">Sign In</button>
-            </Link>
-          </div>
-          <div>
-            <button className="nav_btn2">Get Started</button>
-          </div>
-        </div>
-        <div className="mobile_btn">
-          <FontAwesomeIcon
-            onClick={() => setToggleMenu(!toggleMenu)}
-            icon={faBars}
-            className="mobile_icon"
-          />
-        </div>
-      </div>
-      <ul className={toggleMenu ? "mobile-menu-link" : "navbar_menu"}>
+        <FontAwesomeIcon
+          size="2xl"
+          onClick={() => {
+            setToggleMenu(!toggleMenu);
+          }}
+          icon={faBars}
+          className="toggle-icon"
+        />
+      </nav>
+      <ul className={`mobile-menu ${toggleMenu ? "show" : "hide"}`}>
         <li>
           <a href="">Product</a>
           <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
@@ -87,7 +82,7 @@ function Navbar() {
           <a href="">Partners</a>
         </li>
       </ul>
-    </nav>
+    </>
   );
 }
 export default Navbar;
