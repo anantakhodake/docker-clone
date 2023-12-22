@@ -2,10 +2,11 @@
 .dashboardheader_container{
     display: flex;
     align-items: center;
-    padding: 12px;
-    justify-content: space-around;
-    border: 2px solid blue;
+    position: relative;
+    justify-content: space-between;
     background-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .dashhead{
     display:flex;
@@ -119,26 +120,52 @@
     font-size: 16px;
     font-weight: bold;
 }
-.dashboard_mobileicon{
+.dmobile-menu {
     display: none;
-}
-
+    background-color:white;
+    color: black;
+    position: absolute;
+    top:80px;
+    height: 20rem;
+    border: 2px solid #c9cace;
+    left: 0;
+    opacity:1;
+    width: 100%;
+  }
+  .dmobile-menu li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .dmobile-menu li a{
+  text-decoration: none;
+  color: #505968;
+  font-weight: 600;
+  font-size: 16px;
+  }
+  .dashboard_mobileicon{
+    display: none;
+    color: white;
+  }
 
 /* Responsive css for mobile view */
 
-@media(max-width:980px){
-    .d_container{
-        display: block;
-        /* position: fixed; */
-    }
+@media(max-width:768px){
 
-    .d_links{
-        display: none;
-    }
-    .dashboard_buttons{
-        display: none;
-    }
+   .dashhead{
+    display: none;
+   }
+   .dashboard_buttons{
+    display: none;
+   }
     .dashboard_mobileicon{
         display: block;
     }
-}
+    .dmobile-menu.visible {
+        display: block;
+
+      }
+      .dmobile-menu.hidden {
+        display: none;
+      }
+    }

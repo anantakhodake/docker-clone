@@ -1,9 +1,11 @@
 .nav_container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-top: -35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .navbar_menu {
@@ -23,29 +25,53 @@
   font-size: 16px;
 }
 .action-btn {
-  background-color: #505968;
+  background-color:#1d63ed;
   color: white;
   border: none;
   border-radius: 5px;
-  width: 140px;
+  width: 130px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 550;
+  margin-left: 5px;
 }
+.action-btn1 {
+  background-color:white;
+  color: black;
+  border:2px solid #505968;
+  border-radius: 5px;
+  width: 130px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 550;
+  margin-left: 5px;
+}
+.action-btn1:hover{
+  background-color: rgb(224, 220, 220);
+}
+
 .action-btn:hover {
   cursor: pointer;
-  background-color: #abb8c3;
+  background-color:darkblue;
 }
 
 .mobile-menu {
   display: none;
-  background-color: rgb(53, 53, 251);
-  color: white;
+  background-color:white;
+  color: black;
   position: absolute;
-  top: 100px;
+  top:80px;
+  height: 20rem;
+  border: 2px solid black;
   left: 0;
   width: 100%;
 }
+.mobile-menu li {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
 
 .mobile-menu li {
   list-style: none;
@@ -59,6 +85,7 @@
 
 .toggle-icon {
   display: none;
+  color: blue;
 }
 /* responsive  css style */
 
@@ -72,7 +99,7 @@
   .mobile-menu.show {
     display: block;
   }
-  .mobile-menu.hide {
+  .mobile-menu.hidden {
     display: none;
   }
 }

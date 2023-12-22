@@ -20,11 +20,11 @@ function Navbar() {
         <ul className="navbar_menu">
           <li>
             <a href="">Product</a>
-            <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
+            <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
           </li>
           <li>
             <a href="">Developers</a>
-            <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
+            <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
           </li>
           <li>
             <a href="">Pricing</a>
@@ -34,15 +34,16 @@ function Navbar() {
           </li>
           <li>
             <a href="">About Us</a>
-            <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
+            <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
           </li>
           <li>
             <a href="">Partners</a>
           </li>
           <li>
-            <a href="">
-              <button className="action-btn">Sign In</button>
-            </a>
+            <Link to={"/signin"}><a href="">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <button className="action-btn1">Sign In</button>
+            </a></Link>
           </li>
           <li>
             <a href="">
@@ -62,11 +63,11 @@ function Navbar() {
       <ul className={`mobile-menu ${toggleMenu ? "show" : "hide"}`}>
         <li>
           <a href="">Product</a>
-          <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
+          <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
         </li>
         <li>
           <a href="">Developers</a>
-          <FontAwesomeIcon fontSize="14px" icon={faAngleDown} />
+          <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
         </li>
         <li>
           <a href="">Pricing</a>
