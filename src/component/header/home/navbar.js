@@ -13,6 +13,8 @@ function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [isShow, setIsShow] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [submenu,setSubmenu] = useState(false);
+
   return (
     <>
       <nav className="nav_container">
@@ -129,6 +131,7 @@ function Navbar() {
             <a href="">About Us</a>
             <FontAwesomeIcon
               fontSize="14px"
+              onClick={(e) => setSubmenu(!submenu)}
               color="#505968"
               icon={faAngleDown}
             />
