@@ -1,82 +1,191 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   faAngleDown,
   faBars,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import DockeraLogo from "../../../images/dockerLogo.png";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 function Navbar() {
-  const [isHovered, setIsHovered] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [isShow, setIsShow] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [submenu,setSubmenu] = useState(false);
 
   return (
-    <div className="navcontainer">
-        <ul className="navheader">
-          <img src={DockeraLogo}  alt=""/>
+    <>
+      <nav className="nav_container">
+        {/* image part in navbar */}
+        <img src={DockeraLogo} alt="docker image" />
+        {/* menu in navbar */}
+        <ul className="navbar_menu">
           <li>
-            <a href="" className="navlinks">Products</a>
-            <FontAwesomeIcon icon={faAngleDown} />
+            <a href="">Product</a>
+            <FontAwesomeIcon
+             onClick={(e) => setIsShow(!isShow)}
+              fontSize="14px"
+              color="#505968"
+              icon={faAngleDown}
+            />
           </li>
-          <li
-          onClick={(e)=>{
-            setIsHovered(!isHovered)
-          }}
-           className="developer-menu"
-          >
-            <a href="" className="navlinks">Developers</a>
-            <FontAwesomeIcon icon={faAngleDown} />
-            {isHovered && (
-              <ul  className={`show-submenu ${isHovered ? "is-visible":""}`}>
-                <li><div>Developers</div></li>
-                <li><a href="">Docs</a></li>
-                <li><a href="">Getting Started</a></li>
-                <li><a href="">Extension SDK</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Preview Program</a></li>
-                <li><a href="">Open Source</a></li>
+          <li>
+            <a href="">Developers</a>
+            <FontAwesomeIcon
+            onClick={(e) => setIsVisible(!isVisible)}
+              fontSize="14px"
+              color="#505968"
+              icon={faAngleDown}
+            />
+             {isVisible && (
+              <ul className={`developer-menu ${isVisible ? "show" : ""}`}>
+                <div className="product-menu1">
+                  <li>
+                    <a href="" style={{color:"black"}}>Developers</a>
+                  </li>
+                  <li>
+                    <a href="">Docs</a>
+                  </li>
+                  <li>
+                    <a href="">Getting Started</a>
+                  </li>
+                  <li>
+                    <a href="">Training</a>
+                  </li>
+                  <li>
+                    <a href="">Extensions SDK</a>
+                  </li>
+                  <li>
+                    <a href="">Community</a>
+                  </li>
+                  <li>
+                    <a href="">Open source</a>
+                  </li>
+                  </div>
+                  </ul>
+                  )}
+            {isShow && (
+              <ul className={`product-menu ${isShow ? "is-visible" : ""}`}>
+                <div className="product-menu1">
+                  <li>
+                    <a href="" style={{color:"black"}}>Product Offering</a>
+                  </li>
+                  <li>
+                    <a href="">Docker Personal</a>
+                  </li>
+                  <li>
+                    <a href="">Docker Pro</a>
+                  </li>
+                  <li>
+                    <a href="">Docker Team</a>
+                  </li>
+                  <li>
+                    <a href="">Docker Buisness</a>
+                  </li>
+                  <li>
+                    <a href="">Docker Scout</a>
+                  </li>
+                  <li>
+                    <a href="">Desktop vs eocker Engine</a>
+                  </li>
+                </div>
+                <div className="product-menu1">
+                  <li>
+                    <h4>Features</h4>
+                  </li>
+
+                  <li>
+                    <a href="">Secure software supply chain</a>
+                  </li>
+                  <li>
+                    <a href="">Container Runtime</a>
+                  </li>
+                  <li>
+                    <a href="">Developer Tool</a>
+                  </li>
+                  <li>
+                    <a href="">Trusted Open source content</a>
+                  </li>
+                  <li>
+                    <a href="">Accelerated AI/ML</a>
+                  </li>
+                  <li>
+                    <a href="">CLI</a>
+                  </li>
+                  <li>
+                    <a href="">IDE Extensions</a>
+                  </li>
+                </div>
               </ul>
             )}
           </li>
           <li>
-            <a href="" className="navlinks">Pricing</a>
+            <a href="">Pricing</a>
           </li>
           <li>
-            <a href="" className="navlinks">Blog</a>
+            <a href="">Blog</a>
           </li>
           <li>
-            <a href="" className="navlinks">About</a>
-            <FontAwesomeIcon icon={faAngleDown} />
+            <a href="">About Us</a>
+            <FontAwesomeIcon
+              fontSize="14px"
+              onClick={(e) => setSubmenu(!submenu)}
+              color="#505968"
+              icon={faAngleDown}
+            />
           </li>
           <li>
-            <a href="" className="navlinks">Partners</a>
+            <a href="">Partners</a>
           </li>
-          <div className="navbtn">
-            <Link className="navlinks" to={"/signin"}>
-            <div className="navfirst">
-              <FontAwesomeIcon className="glass" icon={faMagnifyingGlass} />
-              <button>Sign in</button>
-            </div>
+          <li>
+            <Link to={"/signin"}>
+              <a href="">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <button className="action-btn1">Sign In</button>
+              </a>
             </Link>
-            <div>
-              <button className="navbtn1">Get started</button>
-            </div>
-            <div className="mobile_btn">
-              <FontAwesomeIcon icon={faBars} onClick={(e)=>{
-                
-              }} className="mobile_icon" />
-            </div>
-          </div>
+          </li>
+          <li>
+            <a href="">
+              <button className="action-btn">Get Started</button>
+            </a>
+          </li>
         </ul>
-        <ul className={`mobile-menu ${toggleMenu ? "open-menu":"close-menu"}`}>
-          <li className="mobile-menu-item">one</li>
-          <li className="mobile-menu-item">one</li>
-          <li className="mobile-menu-item">one</li>
-          <li className="mobile-menu-item">one</li>
-          </ul>
-      </div>
+        <FontAwesomeIcon
+          size="2xl"
+          onClick={() => {
+            setToggleMenu(!toggleMenu);
+          }}
+          icon={faBars}
+          className="toggle-icon"
+        />
+      </nav>
+      <ul className={`mobile-menu ${toggleMenu ? "show" : "hide"}`}>
+        <li>
+          <a href="">Product</a>
+          <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
+        </li>
+        <li>
+          <a href="">Developers</a>
+          <FontAwesomeIcon fontSize="14px" color="#505968" icon={faAngleDown} />
+        </li>
+        <li>
+          <a href="">Pricing</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="">About Us</a>
+          <FontAwesomeIcon fontSize="14px" color="blue" icon={faAngleDown} />
+        </li>
+        <li>
+          <a href="">Partners</a>
+        </li>
+      </ul>
+    </>
   );
 }
 export default Navbar;
