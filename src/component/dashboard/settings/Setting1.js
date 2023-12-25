@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faUser } from "@fortawesome/free-solid-svg-icons";
 import blueFingerprint from "./blueFingerprint.png";
-import Genaralsettingtab from "./Genaralsettingtab";
 function Setting1() {
   return (
     <>
