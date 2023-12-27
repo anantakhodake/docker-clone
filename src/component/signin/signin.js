@@ -26,7 +26,7 @@ function SignIn() {
           <Link to={"/dashboard"}>
             <button className="sbtn1">Continue</button>
           </Link>
-          <div className="hr">__________________OR___________________</div>
+          <div className="hr">___________________OR____________________</div>
           <button className="sbtn2">Continue With Google</button>
           <button className="sbtn2">Continue With Github</button>
         </div>

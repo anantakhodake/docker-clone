@@ -3,7 +3,6 @@ import Searchbar from "./Searchbar";
 import "./DashboardHeader.css";
 import { Link } from "react-router-dom";
 import blueFingerprint from "./blueFingerprint.png";
-import Dashboardhomepage from "./Dashboardhomepage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 function DashboardHeader() {
