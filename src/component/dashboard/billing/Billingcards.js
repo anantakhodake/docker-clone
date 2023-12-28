@@ -1,7 +1,7 @@
 import React from "react";
 import "./Billingcards.css";
 import blueFingerprint from "./blueFingerprint.png";
-import { Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 function Billingcards() {
   return (
