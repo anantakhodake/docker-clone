@@ -5,8 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignIn from "./component/signin/signin";
 import SignUp from "./component/signup/signup";
 import Reporitories from "./component/dashboard/repositories/Reporitories";
-import { Dashboard } from "@mui/icons-material";
-import DashboardHeader from "./component/header/dashboard/DashboardHeader";
 import Billing from "./component/dashboard/billing/Billing"
 import Dashboardhomepage from "./component/header/dashboard/Dashboardhomepage";
 import Profile from "./component/dashboard/profile/Profile";
