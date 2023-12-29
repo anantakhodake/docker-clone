@@ -13,11 +13,12 @@ import Settings from "./component/dashboard/settings/Settings";
 import Upgradeui from "./component/dashboard/billing/Upgradeui";
 function App() {
   return (
+    // set up route of the coponent in app js
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<><SignUp /></>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/signin" element={<SignIn/>} />
+        <Route path="/signup" element={<><SignUp/></>} />
         <Route path="/dashboard" element={<><Dashboardhomepage/></>} />
         <Route path="/dashboard/search" element={<><Explore/></>} />
         <Route path="/dashboard/billing" element={<><Billing/></>} />
