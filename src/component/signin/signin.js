@@ -13,7 +13,7 @@ function SignIn() {
       </div>
       <div className="signin_container">
         <div className="signin_container1">
-          <img src={dockerLogo} alt="" />
+          <img src={ dockerLogo } alt="" />
           <h1>Sign In</h1>
           <p>Sign in to Docker to continue to Docker Hub.</p>
         </div>
