@@ -14,7 +14,7 @@ function Billingcards() {
         </div>
       </div>
 
-      <div className="b_card2container">
+      <div className=" b_card2container">
         <div className="b_card2">
           <h2>Docker Personal</h2>
           <p>Docker Desktop</p>
@@ -23,7 +23,7 @@ function Billingcards() {
           <p>Limited image pulls per day</p>
           <p>Unlimited scoped tokens</p>
         </div>
-        <div className="b_card2btn">
+        <div className=" b_card2btn">
           <button className="b_card2btn">
             <Link
               className={"upgradeui_link"}
