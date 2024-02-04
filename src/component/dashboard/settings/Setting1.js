@@ -15,7 +15,7 @@ function Setting1() {
 
       <div className="ss_container">
         <div className="s_image<">
-          <img className="pr_image" src={blueFingerprint} alt="" />
+          <img  className="pr_image" src={blueFingerprint} alt="" />
         </div>
         <div className="s_user">
           <div className="s_user1">
