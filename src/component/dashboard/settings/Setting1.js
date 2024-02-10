@@ -12,7 +12,6 @@ function Setting1() {
         <Link className="s_link">Account Setting /</Link>
         <Link className="s_link">General</Link>
       </div>
-
       <div className="ss_container">
         <div className="s_image<">
           <img  className="pr_image" src={blueFingerprint} alt="" />
